@@ -13,6 +13,1159 @@
   <div id="root"></div>
   <script type="text/babel">
     const questions = [
+      {
+        "id": 1,
+    "text": "A Salesforce associate wants to edit a field within an opportunity record, but he is unable to edit the field because he has no rights to do so. In this situation, what should the system administrator do?",
+    "options": [
+      { "text": "Update the role", "value": "A" },
+      { "text": "Update permission sets", "value": "B" },
+      { "text": "Deactivate the user", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Permission sets define user access rights. Updating the permission set grants the associate field edit access without altering roles or deactivating the user.",
+    "appearedInExam": true
+  },
+  {
+    "id": 2,
+    "text": "A Salesforce associate at Get Cloudy Consulting is given a list of opportunities to work on. The associate asks for an easier way to change the opportunity stage as and when he works on it. What should be recommended?",
+    "options": [
+      { "text": "Switch to the Kanban View", "value": "A" },
+      { "text": "Create multiple list views", "value": "B" },
+      { "text": "Use a Dynamic Dashboard View", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Kanban view provides a visual pipeline for opportunity stages, allowing the associate to easily view and update stages by dragging records.",
+    "appearedInExam": true
+  },
+  {
+    "id": 3,
+    "text": "An organisation is migrating its cloud CRM to Salesforce, an associate (the lead of this migration) has decided to create learning content on the Trailhead platform in the form of multiple modules targeting the same content and basic Salesforce content. What should he do?",
+    "options": [
+      { "text": "He should create a trail mix", "value": "A" },
+      { "text": "Salesforce help portal", "value": "B" },
+      { "text": "Learn via books", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Trailmixes are custom learning paths on Trailhead, combining modules, projects, and superbadges to train associates on Salesforce offerings.",
+    "appearedInExam": true
+  },
+  {
+    "id": 4,
+    "text": "Which of the following are benefits of Salesforce?",
+    "options": [
+      { "text": "Cloud-based: Salesforce is a cloud-based platform, providing businesses with a scalable, secure, and always-available solution", "value": "A" },
+      { "text": "Mobile: Salesforce has a robust mobile app, allowing users to access customer data and perform tasks from anywhere, on any device", "value": "B" },
+      { "text": "Centralized Customer Data: Salesforce provides a single platform for storing and managing customer data, enabling businesses to have a 360-degree view of their customers", "value": "C" },
+      { "text": "All of the above", "value": "D" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Salesforce offers cloud-based scalability, a robust mobile app, and centralized customer data, providing a comprehensive CRM solution.",
+    "appearedInExam": true
+  },
+  {
+    "id": 5,
+    "text": "Adding a dashboard to favorites provides quick access to the dashboard, while subscribing to a dashboard provides regular updates to the dashboard. True or false?",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Favoriting a dashboard allows quick access, while subscribing sends regular updates via email, making the statement true.",
+    "appearedInExam": true
+  },
+  {
+    "id": 6,
+    "text": "An associate wants to share a few reports and dashboards of quarterly profits with another associate for review purposes, which of the following actions is the right choice in the given condition?",
+    "options": [
+      { "text": "Share folder", "value": "A" },
+      { "text": "Download and share", "value": "B" },
+      { "text": "Export and mail", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Sharing the folder containing reports and dashboards allows controlled access with customizable permissions, ensuring efficient collaboration.",
+    "appearedInExam": true
+  },
+  {
+    "id": 7,
+    "text": "A Salesforce associate wants to check all apps related to email marketing that Salesforce offers, where should he look for such apps?",
+    "options": [
+      { "text": "Search box", "value": "A" },
+      { "text": "AppExchange", "value": "B" },
+      { "text": "Dashboard folder", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "AppExchange is Salesforce’s marketplace for apps, where users can find, review, and download email marketing apps.",
+    "appearedInExam": true
+  },
+  {
+    "id": 8,
+    "text": "A few associates are moving out of Salesforce within an organization, what is the right action that the system administrator should perform to ensure that they won't be able to access Salesforce in the future?",
+    "options": [
+      { "text": "De-activate their accounts", "value": "A" },
+      { "text": "Let it be as it is", "value": "B" },
+      { "text": "Delete their account", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Deactivating user accounts prevents future access while preserving data, as Salesforce does not allow permanent user deletion.",
+    "appearedInExam": true
+  },
+  {
+    "id": 9,
+    "text": "A manager is creating a dashboard for their team and wants each team member to receive a copy of the dashboard results by email each week. What should the team members do to ensure they receive the weekly results?",
+    "options": [
+      { "text": "Like the dashboard", "value": "A" },
+      { "text": "Subscribe to the dashboard", "value": "B" },
+      { "text": "Follow the dashboard", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subscribing to a dashboard allows team members to receive scheduled email updates with refreshed results.",
+    "appearedInExam": true
+  },
+  {
+    "id": 10,
+    "text": "What is the maximum number of rows will display within a report?",
+    "options": [
+      { "text": "2000", "value": "A" },
+      { "text": "2500", "value": "B" },
+      { "text": "3000", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce reports display a maximum of 2,000 rows to ensure performance and usability.",
+    "appearedInExam": true
+  },
+  {
+    "id": 11,
+    "text": "An associate has recently started Salesforce, he wants to meet similar Salesforce users within his locality. Where should he navigate to?",
+    "options": [
+      { "text": "Salesforce help", "value": "A" },
+      { "text": "Trailhead community", "value": "B" },
+      { "text": "Trailhead modules", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Trailblazer Community connects Salesforce users for collaboration, networking, and local meetups.",
+    "appearedInExam": true
+  },
+  {
+    "id": 12,
+    "text": "A Salesforce associate wants to read the latest documentation on reports and dashboards, where should he navigate to?",
+    "options": [
+      { "text": "Salesforce help", "value": "A" },
+      { "text": "Trailhead community", "value": "B" },
+      { "text": "Google", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce Help (help.salesforce.com) provides up-to-date documentation and release notes for all Salesforce functionalities, including reports and dashboards.",
+    "appearedInExam": true
+  },
+  {
+    "id": 13,
+    "text": "An associate is working on a change request which at the end he/she wants to deploy in production. What are the right steps he/she should take?",
+    "options": [
+      { "text": "Deploy and test in sandbox, deploy and test in production", "value": "A" },
+      { "text": "Deploy in production", "value": "B" },
+      { "text": "Deploy in sandbox and then deploy in production", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Testing changes in a sandbox ensures functionality before deploying to production, where further testing confirms stability.",
+    "appearedInExam": true
+  },
+  {
+    "id": 14,
+    "text": "A manager is creating a dashboard for their team and wants each team member to receive a copy of the dashboard results by email each week. What should the team members do to ensure they receive the weekly results?",
+    "options": [
+      { "text": "Like the dashboard", "value": "A" },
+      { "text": "Subscribe to the dashboard", "value": "B" },
+      { "text": "Follow the dashboard", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subscribing to a dashboard schedules email delivery of refreshed results to team members.",
+    "appearedInExam": true
+  },
+  {
+    "id": 15,
+    "text": "A non-profit organization wants a cost-effective solution to generate and send donation acknowledgment automatically to donors via email, which Salesforce solution should the consultant recommend?",
+    "options": [
+      { "text": "Non-profit success pack", "value": "A" },
+      { "text": "Commerce cloud", "value": "B" },
+      { "text": "Experience cloud", "value": "C" },
+      { "text": "Service cloud", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Nonprofit Success Pack provides tools for nonprofits, including automated donation acknowledgment emails, tailored for fundraising needs.",
+    "appearedInExam": true
+  },
+  {
+    "id": 16,
+    "text": "What is a report?",
+    "options": [
+      { "text": "A list of records that meet the criteria you define", "value": "A" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A report in Salesforce is a list of records filtered based on user-defined criteria, used for data analysis.",
+    "appearedInExam": true
+  },
+  {
+    "id": 17,
+    "text": "What is a dashboard?",
+    "options": [
+      { "text": "A list of records that meet the criteria you define", "value": "A" },
+      { "text": "A visual display of key metrics and trends for records in your org", "value": "B" },
+      { "text": "A list of products that are top sellers", "value": "C" },
+      { "text": "A chart that displays data graphically", "value": "D" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Dashboards visually represent key metrics and trends from reports, providing insights into organizational data.",
+    "appearedInExam": true
+  },
+  {
+    "id": 18,
+    "text": "What is the difference between a report and a dashboard?",
+    "options": [
+      { "text": "Reports are lists of records while dashboards are charts that display data graphically", "value": "A" },
+      { "text": "Reports are stored in folders while dashboards are not", "value": "B" },
+      { "text": "Reports are more advanced than dashboards", "value": "C" },
+      { "text": "Dashboards are visual displays of key metrics and trends for records in your org while reports are lists of records that meet the criteria you define", "value": "D" }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Reports list records based on criteria, while dashboards provide visual representations of report data for trends and metrics.",
+    "appearedInExam": true
+  },
+  {
+    "id": 19,
+    "text": "Which of the following best describes a use case for custom objects in Salesforce?",
+    "options": [
+      { "text": "Creating a custom field on the Account object to track a customer's preferred language", "value": "A" },
+      { "text": "Creating a custom object to track orders placed by customers", "value": "B" },
+      { "text": "Creating a custom field on the Opportunity object to track the probability of a sale", "value": "C" },
+      { "text": "Creating a custom object to track emails sent to customers", "value": "D" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Custom objects are used for new data entities, like tracking customer orders, distinct from standard objects like Accounts or Opportunities.",
+    "appearedInExam": true
+  },
+  {
+    "id": 20,
+    "text": "Which of the following is an example of a many-to-many relationship in Salesforce?",
+    "options": [
+      { "text": "An Account has many Contacts", "value": "A" },
+      { "text": "A Contact has many Opportunities", "value": "B" },
+      { "text": "An Opportunity has many Products", "value": "C" },
+      { "text": "A Campaign has many Campaign Members", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "An Opportunity can have multiple Products, and a Product can be linked to multiple Opportunities, forming a many-to-many relationship via a junction object.",
+    "appearedInExam": true
+  },
+  {
+    "id": 21,
+    "text": "Which of the following best describes the difference between a master-detail relationship and a lookup relationship in Salesforce?",
+    "options": [
+      { "text": "A master-detail relationship is used for one-to-many relationships, while a lookup relationship is used for many-to-many relationships", "value": "A" },
+      { "text": "A master-detail relationship is used for many-to-many relationships, while a lookup relationship is used for one-to-many relationships", "value": "B" },
+      { "text": "A master-detail relationship is a parent-child relationship, while a lookup relationship is a peer relationship", "value": "C" },
+      { "text": "A master-detail relationship is used to enforce sharing rules, while a lookup relationship is not", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Master-detail relationships create a tight parent-child bond with cascading deletes, while lookup relationships are looser, peer-like connections.",
+    "appearedInExam": true
+  },
+  {
+    "id": 22,
+    "text": "Which of the following best describes a use case for creating a custom field in Salesforce?",
+    "options": [
+      { "text": "Tracking the last time a contact was called", "value": "A" },
+      { "text": "Storing a customer's billing address", "value": "B" },
+      { "text": "Recording the number of employees at a company", "value": "C" },
+      { "text": "Storing a customer's phone number", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Custom fields track specific attributes, like the last contact call date, not typically covered by standard fields like address or phone.",
+    "appearedInExam": true
+  },
+  {
+    "id": 23,
+    "text": "Which of the following best describes a use case for creating a custom object in Salesforce?",
+    "options": [
+      { "text": "Storing a list of products", "value": "A" },
+      { "text": "Recording a customer's name and email address", "value": "B" },
+      { "text": "Tracking a customer's support case history", "value": "C" },
+      { "text": "Storing a customer's account balance", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Custom objects are ideal for tracking complex entities like support case history, which requires a new data structure beyond standard objects.",
+    "appearedInExam": true
+  },
+  {
+    "id": 24,
+    "text": "Which of the following best describes a use case for creating a new record type in Salesforce?",
+    "options": [
+      { "text": "Differentiating between different types of support cases", "value": "A" },
+      { "text": "Tracking the stage of a sales opportunity", "value": "B" },
+      { "text": "Recording a customer's order history", "value": "C" },
+      { "text": "Storing a customer's shipping address", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Record types differentiate records within the same object, like categorizing support cases by type, to apply specific processes or layouts.",
+    "appearedInExam": true
+  },
+  {
+    "id": 25,
+    "text": "What is Schema Builder?",
+    "options": [
+      { "text": "A tool used to build schema in Salesforce", "value": "A" },
+      { "text": "A tool used to analyze data in Salesforce", "value": "B" },
+      { "text": "A tool used to build workflows in Salesforce", "value": "C" },
+      { "text": "A tool used to create reports in Salesforce", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder is a visual tool for creating and modifying custom objects, fields, and relationships in Salesforce.",
+    "appearedInExam": true
+  },
+  {
+    "id": 26,
+    "text": "What is the purpose of Schema Builder?",
+    "options": [
+      { "text": "To create custom objects, fields, and relationships", "value": "A" },
+      { "text": "To analyze data in Salesforce", "value": "B" },
+      { "text": "To build workflows in Salesforce", "value": "C" },
+      { "text": "To create reports in Salesforce", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder’s purpose is to design and manage the data model by creating custom objects, fields, and relationships.",
+    "appearedInExam": true
+  },
+  {
+    "id": 27,
+    "text": "What can you do with Schema Builder?",
+    "options": [
+      { "text": "Create custom objects, fields, and relationships", "value": "A" },
+      { "text": "Analyze data in Salesforce", "value": "B" },
+      { "text": "Build workflows in Salesforce", "value": "C" },
+      { "text": "Create reports in Salesforce", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder allows users to create and manage custom objects, fields, and relationships visually within Salesforce.",
+    "appearedInExam": true
+  },
+  {
+    "id": 28,
+    "text": "What is a field in Schema Builder?",
+    "options": [
+      { "text": "A column in a table that holds data", "value": "A" },
+      { "text": "A row in a table that holds data", "value": "B" },
+      { "text": "A formula used to calculate data", "value": "C" },
+      { "text": "A chart used to visualize data", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In Schema Builder, a field is a column in an object (table) that stores specific data for each record.",
+    "appearedInExam": true
+  },
+  {
+    "id": 29,
+    "text": "What is a relationship in Schema Builder?",
+    "options": [
+      { "text": "A connection between two objects", "value": "A" },
+      { "text": "A formula used to calculate data", "value": "B" },
+      { "text": "A chart used to visualize data", "value": "C" },
+      { "text": "A row in a table that holds data", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A relationship in Schema Builder defines how two objects are connected, such as through lookup or master-detail relationships.",
+    "appearedInExam": true
+  },
+  {
+    "id": 30,
+    "text": "What is the purpose of a lookup relationship in Schema Builder?",
+    "options": [
+      { "text": "To create a relationship between two objects", "value": "A" },
+      { "text": "To create a parent-child relationship between two objects", "value": "B" },
+      { "text": "To create a many-to-many relationship between two objects", "value": "C" },
+      { "text": "To create a relationship between a custom object and a standard object", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A lookup relationship in Schema Builder creates a loose connection between two objects, allowing referencing without strict dependency.",
+    "appearedInExam": true
+  },
+  {
+    "id": 31,
+    "text": "What is the Salesforce.org Nonprofit Cloud?",
+    "options": [
+      { "text": "A cloud-based platform designed specifically for nonprofit organizations", "value": "A" },
+      { "text": "A suite of products for managing donor and fundraising data", "value": "B" },
+      { "text": "A tool for tracking volunteer hours", "value": "C" },
+      { "text": "A software for managing corporate social responsibility programs", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce.org Nonprofit Cloud is a tailored platform for nonprofits, supporting fundraising, donor management, and program tracking.",
+    "appearedInExam": true
+  },
+  {
+    "id": 32,
+    "text": "What is the Nonprofit Success Pack in the Salesforce.org Nonprofit Cloud?",
+    "options": [
+      { "text": "A tool for tracking volunteer hours", "value": "A" },
+      { "text": "A suite of products for managing donor and fundraising data", "value": "B" },
+      { "text": "A cloud-based platform designed specifically for nonprofit organizations", "value": "C" },
+      { "text": "A feature for managing nonprofit programs and services", "value": "D" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Nonprofit Success Pack is a set of tools within Nonprofit Cloud for managing donor relationships and fundraising activities.",
+    "appearedInExam": true
+  },
+  {
+    "id": 33,
+    "text": "What is the main purpose of the Salesforce Platform?",
+    "options": [
+      { "text": "To provide a scalable and secure infrastructure for businesses to build and run their applications", "value": "A" },
+      { "text": "To provide a ready-to-use customer relationship management (CRM) software", "value": "B" },
+      { "text": "To provide a set of tools for managing social media accounts", "value": "C" },
+      { "text": "To provide a cloud-based email marketing service", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Salesforce Platform provides a scalable, secure infrastructure for building and running custom applications.",
+    "appearedInExam": true
+  },
+  {
+    "id": 34,
+    "text": "What is a sandbox in the context of the Salesforce Platform?",
+    "options": [
+      { "text": "A testing environment for developing and testing new applications or changes to existing ones", "value": "A" },
+      { "text": "A tool for managing customer data", "value": "B" },
+      { "text": "A tool for automating business processes", "value": "C" },
+      { "text": "A tool for creating custom reports and dashboards", "value": "D" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A sandbox is a testing environment in Salesforce for developing and testing changes without affecting the production org.",
+    "appearedInExam": true
+  },
+  {
+    "id": 35,
+    "text": "What is the maximum number of rows a report will display?",
+    "options": [
+      { "text": "500 rows", "value": "A" },
+      { "text": "1000 rows", "value": "B" },
+      { "text": "2000 rows", "value": "C" },
+      { "text": "5000 rows", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Salesforce reports are limited to displaying a maximum of 2,000 rows for performance reasons.",
+    "appearedInExam": true
+  },
+  {
+    "id": 36,
+    "text": "A Salesforce administrator wants to give a user access to edit fields on opportunity records across the organization. Which Salesforce feature can the administrator use to grant the user this access?",
+    "options": [
+      { "text": "Record types", "value": "A" },
+      { "text": "Profiles", "value": "B" },
+      { "text": "Permission sets", "value": "C" },
+      { "text": "Sharing rules", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Permission sets provide granular access control, allowing the administrator to grant field edit permissions without altering profiles.",
+    "appearedInExam": true
+  },
+  {
+    "id": 37,
+    "text": "What type of relationship in Salesforce allows for automatic deletion of child records when the parent record is deleted?",
+    "options": [
+      { "text": "Master-detail", "value": "A" },
+      { "text": "Self", "value": "B" },
+      { "text": "Lookup", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Master-detail relationships enforce cascading deletes, removing child records when the parent is deleted.",
+    "appearedInExam": true
+  },
+  {
+    "id": 38,
+    "text": "What type of relationship in Salesforce allows for a record to reference itself?",
+    "options": [
+      { "text": "Master-detail", "value": "A" },
+      { "text": "Self", "value": "B" },
+      { "text": "Lookup", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A self-relationship allows a record to reference another record of the same object, typically via a lookup field.",
+    "appearedInExam": true
+  },
+  {
+    "id": 39,
+    "text": "What type of relationship in Salesforce allows for the creation of a lookup field?",
+    "options": [
+      { "text": "Master-detail", "value": "A" },
+      { "text": "Self", "value": "B" },
+      { "text": "Lookup", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A lookup relationship creates a lookup field to loosely connect two objects without strict dependencies.",
+    "appearedInExam": true
+  },
+  {
+    "id": 40,
+    "text": "What is the purpose of the Role Hierarchy in Salesforce?",
+    "options": [
+      { "text": "To control access to data based on a user’s position in the hierarchy", "value": "A" },
+      { "text": "To determine which users have access to which objects", "value": "B" },
+      { "text": "To determine which users can create and modify records", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Role Hierarchy controls data access, granting users access to records owned by those below them in the hierarchy.",
+    "appearedInExam": true
+  },
+  {
+    "id": 41,
+    "text": "Your organization has recently implemented Salesforce and you have been tasked with setting up the Role Hierarchy. The CEO of the company should have access to all records, while the Sales Manager should only have access to opportunities owned by members of their team. What is the recommended approach for setting up the Role Hierarchy in this scenario?",
+    "options": [
+      { "text": "Create a single role for the CEO at the top of the hierarchy, and a second role for the Sales Manager directly below them", "value": "A" },
+      { "text": "Create a single role for the Sales Manager at the top of the hierarchy, and a second role for the CEO directly below them", "value": "B" },
+      { "text": "Create two separate hierarchies, one for the CEO and one for the Sales Manager, with the CEO at the top of both hierarchies", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Placing the CEO at the top of the hierarchy ensures access to all records, while the Sales Manager below accesses only team-owned opportunities.",
+    "appearedInExam": true
+  },
+  {
+    "id": 42,
+    "text": "Which of the following actions should team members take to ensure they receive the dashboard results by email each week?",
+    "options": [
+      { "text": "Like the dashboard", "value": "A" },
+      { "text": "Subscribe to the dashboard", "value": "B" },
+      { "text": "Follow the dashboard", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subscribing to a dashboard ensures team members receive weekly email updates with the latest dashboard results.",
+    "appearedInExam": true
+  },
+  {
+    "id": 43,
+    "text": "What is Commerce Cloud?",
+    "options": [
+      { "text": "A cloud-based solution for customer service", "value": "A" },
+      { "text": "A cloud-based solution for managing customer accounts", "value": "B" },
+      { "text": "A cloud-based solution for e-commerce", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Commerce Cloud is Salesforce’s solution for building and managing e-commerce experiences, including online stores.",
+    "appearedInExam": true
+  },
+  {
+    "id": 44,
+    "text": "What is Experience Cloud?",
+    "options": [
+      { "text": "A cloud-based solution for managing customer service", "value": "A" },
+      { "text": "A cloud-based solution for managing customer accounts", "value": "B" },
+      { "text": "A cloud-based solution for creating and managing digital experiences", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Experience Cloud enables the creation of branded digital experiences, such as portals and communities, for customers and partners.",
+    "appearedInExam": true
+  },
+  {
+    "id": 45,
+    "text": "What is Service Cloud?",
+    "options": [
+      { "text": "A cloud-based solution for managing customer accounts", "value": "A" },
+      { "text": "A cloud-based solution for e-commerce", "value": "B" },
+      { "text": "A cloud-based solution for customer service", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Service Cloud supports customer service operations, including case management, support tickets, and omni-channel interactions.",
+    "appearedInExam": true
+  },
+  {
+    "id": 46,
+    "text": "GCC is a retail company that wants to improve its online sales. Which Salesforce solution should GCC use?",
+    "options": [
+      { "text": "Commerce Cloud", "value": "A" },
+      { "text": "Experience Cloud", "value": "B" },
+      { "text": "Service Cloud", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Commerce Cloud is designed to enhance online sales by providing tools for e-commerce platforms and customer shopping experiences.",
+    "appearedInExam": true
+  },
+  {
+    "id": 47,
+    "text": "GCC wants to create a community portal for its customers to interact with each other and share feedback. Which Salesforce solution should GCC use?",
+    "options": [
+      { "text": "Commerce Cloud", "value": "A" },
+      { "text": "Experience Cloud", "value": "B" },
+      { "text": "Service Cloud", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Experience Cloud enables the creation of community portals for customer interaction, feedback, and engagement.",
+    "appearedInExam": true
+  },
+  {
+    "id": 48,
+    "text": "GCC wants to implement a customer support system to manage inquiries and tickets from customers. Which Salesforce solution should GCC use?",
+    "options": [
+      { "text": "Commerce Cloud", "value": "A" },
+      { "text": "Experience Cloud", "value": "B" },
+      { "text": "Service Cloud", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Service Cloud is tailored for managing customer inquiries, support tickets, and interactions across multiple channels.",
+    "appearedInExam": true
+  },
+  {
+    "id": 49,
+    "text": "A Salesforce associate wants to represent a data model to stakeholders, but the data model is huge and complex. Which of the following tool he/she should use?",
+    "options": [
+      { "text": "Schema Builder", "value": "A" },
+      { "text": "Object Relationship", "value": "B" },
+      { "text": "Report Builder", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder visually represents complex data models, making it easier to communicate objects and relationships to stakeholders.",
+    "appearedInExam": true
+  },
+  {
+    "id": 50,
+    "text": "In xyz consultancy, the team was finding it difficult to track product defects. They decided to link the BUG objects with cases. This way the team will be able to see related records to the bugs. Which of the following Salesforce offering they should use?",
+    "options": [
+      { "text": "Object Relationship", "value": "A" },
+      { "text": "Create leads", "value": "B" },
+      { "text": "Create dashboards", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Object relationships, such as lookup or master-detail, link BUG objects to Cases for tracking related defect records.",
+    "appearedInExam": true
+  },
+  {
+    "id": 51,
+    "text": "Which of the following is true?",
+    "options": [
+      { "text": "Using Schema Builder you can edit your data model", "value": "A" },
+      { "text": "Using Schema Builder you cannot visualize data", "value": "B" },
+      { "text": "Using Schema Builder you cannot create a schema for a given model", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder allows editing of the data model by creating and modifying objects, fields, and relationships visually.",
+    "appearedInExam": true
+  },
+  {
+    "id": 52,
+    "text": "A Salesforce associate wants to check the latest release notes of Schema Builder. Where can a Salesforce associate find the latest documentation, release notes, etc. on Salesforce products?",
+    "options": [
+      { "text": "Trailhead academy", "value": "A" },
+      { "text": "Salesforce help", "value": "B" },
+      { "text": "Trailblazer community", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Salesforce Help (help.salesforce.com) provides the latest documentation and release notes for all Salesforce products, including Schema Builder.",
+    "appearedInExam": true
+  },
+  {
+    "id": 53,
+    "text": "A Salesforce associate receives a request to do a change in an existing field in a form, how should they implement this change?",
+    "options": [
+      { "text": "Deploy in sandbox, do the testing after this deploy in the production and do the testing", "value": "A" },
+      { "text": "Deploy the changes in production and do the testing", "value": "B" },
+      { "text": "Deploy the changes in sandbox", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Changes should be deployed and tested in a sandbox first, then deployed and tested in production to ensure stability.",
+    "appearedInExam": true
+  },
+  {
+    "id": 54,
+    "text": "What is the best policy in Salesforce?",
+    "options": [
+      { "text": "Code of conduct", "value": "A" },
+      { "text": "Trust", "value": "B" },
+      { "text": "SLA (service level agreement)", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Trust is Salesforce’s core policy, emphasizing security, transparency, and reliability in its platform and services.",
+    "appearedInExam": true
+  },
+  {
+    "id": 55,
+    "text": "A new Salesforce intern has joined the GCC team, he wants to know more people who are learning Salesforce 360, he wants to connect and collaborate with other trailblazers.",
+    "options": [
+      { "text": "Trailhead", "value": "A" },
+      { "text": "TrailBlazer community", "value": "B" },
+      { "text": "Salesforce 360", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Trailblazer Community connects Salesforce learners and professionals for collaboration and networking.",
+    "appearedInExam": true
+  },
+  {
+    "id": 56,
+    "text": "Fill in the blank: ______ are guided paths made up of modules and projects with a common theme.",
+    "options": [
+      { "text": "Trail", "value": "A" },
+      { "text": "Module", "value": "B" },
+      { "text": "Unit", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Trails are guided learning paths on Trailhead, combining modules and projects around a common theme.",
+    "appearedInExam": true
+  },
+  {
+    "id": 57,
+    "text": "When a Lead is converted, an Account, Contact, and ______ record are created.",
+    "options": [
+      { "text": "Stage", "value": "A" },
+      { "text": "Role", "value": "B" },
+      { "text": "Opportunity", "value": "C" },
+      { "text": "Case", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Converting a Lead in Salesforce creates an Account, Contact, and Opportunity record to track potential sales.",
+    "appearedInExam": true
+  },
+  {
+    "id": 58,
+    "text": "Users can be deleted from Salesforce.com",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Salesforce does not allow user deletion; accounts can only be deactivated to prevent access while preserving data.",
+    "appearedInExam": true
+  },
+  {
+    "id": 59,
+    "text": "A Profile can have many users, but a user can have only one profile.",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A profile can be assigned to multiple users, but each user is assigned only one profile to define their access.",
+    "appearedInExam": true
+  },
+  {
+    "id": 60,
+    "text": "Get Cloudy Consulting is rolling out Salesforce to its organization. New users may have different access requirements based on department. What should be recommended to allow new users the correct access based on their department's requirements?",
+    "options": [
+      { "text": "Role Hierarchy", "value": "A" },
+      { "text": "Individual profiles", "value": "B" },
+      { "text": "Permission sets", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Role Hierarchy aligns access with department structure, granting users access to records based on their position.",
+    "appearedInExam": true
+  },
+  {
+    "id": 61,
+    "text": "Within Salesforce, a non-profit cloud service is present for organizations that are looking forward to fundraising and grant making for a noble cause.",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce’s Nonprofit Cloud supports fundraising, grant making, and program management for nonprofit organizations.",
+    "appearedInExam": true
+  },
+  {
+    "id": 62,
+    "text": "In Salesforce, Dashboards are created using reports?",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Dashboards in Salesforce are built using data from reports to visualize key metrics and trends.",
+    "appearedInExam": true
+  },
+  {
+    "id": 63,
+    "text": "An employee has moved from the USA to India, for better user experience he wants to change the time zone. Which of the following is the correct way to do so?",
+    "options": [
+      { "text": "User should update date and time in default locale settings", "value": "A" },
+      { "text": "User should update date and time in personal locale settings", "value": "B" },
+      { "text": "Change both default and locale settings", "value": "C" },
+      { "text": "None of the above", "value": "D" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Users can update their time zone in personal locale settings to reflect their new location for better usability.",
+    "appearedInExam": true
+  },
+  {
+    "id": 64,
+    "text": "In Salesforce, what is used to keep track of customer inquiries, customer feedback, questions, etc. on an object?",
+    "options": [
+      { "text": "Account", "value": "A" },
+      { "text": "Case", "value": "B" },
+      { "text": "Lead", "value": "C" },
+      { "text": "Opportunity", "value": "D" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The Case object tracks customer inquiries, feedback, and support issues in Salesforce.",
+    "appearedInExam": true
+  },
+  {
+    "id": 65,
+    "text": "A Salesforce user wants to update their name due to some reason, where should she navigate to?",
+    "options": [
+      { "text": "Contract record", "value": "A" },
+      { "text": "User profile page", "value": "B" },
+      { "text": "Lead record", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Users can update their personal information, including their name, on their User profile page in Salesforce.",
+    "appearedInExam": true
+  },
+  {
+    "id": 66,
+    "text": "You are a sales manager at a company and you want to track the progress of your sales team's opportunities. You can use a ______ in Salesforce to visually display each opportunity and its current stage in the sales process.",
+    "options": [
+      { "text": "Kanban board", "value": "A" },
+      { "text": "Create report", "value": "B" },
+      { "text": "Create a dashboard", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A Kanban board visually displays opportunities by stage, allowing sales managers to track progress efficiently.",
+    "appearedInExam": true
+  },
+  {
+    "id": 67,
+    "text": "At Get Clouding Consultancy team has to create a list of all installed and custom applications in their org. What is the right tool to do that on Salesforce?",
+    "options": [
+      { "text": "Appexchange", "value": "A" },
+      { "text": "App Launcher", "value": "B" },
+      { "text": "Help", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The App Launcher displays all installed and custom applications available in the Salesforce org.",
+    "appearedInExam": true
+  },
+  {
+    "id": 68,
+    "text": "Get Cloud Consultation wants to work on customer service teams and helps manage customer cases, support tickets, and customer interactions across multiple channels. Which of the following clouds they should opt for?",
+    "options": [
+      { "text": "Marketing cloud", "value": "A" },
+      { "text": "Sales cloud", "value": "B" },
+      { "text": "Service cloud", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Service Cloud is designed for managing customer cases, support tickets, and multi-channel interactions.",
+    "appearedInExam": true
+  },
+  {
+    "id": 69,
+    "text": "A Salesforce associate wants to get a new field added to the org, to whom should he reach out and collaborate to get this done?",
+    "options": [
+      { "text": "Salesforce administrator", "value": "A" },
+      { "text": "Salesforce Architecture", "value": "B" },
+      { "text": "Salesforce Developer", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce administrators are responsible for configuring the org, including adding new fields to objects.",
+    "appearedInExam": true
+  },
+  {
+    "id": 70,
+    "text": "A Salesforce user wants to contact Salesforce Support directly for personalized assistance. Where should the user navigate to?",
+    "options": [
+      { "text": "Google", "value": "A" },
+      { "text": "Trailhead", "value": "B" },
+      { "text": "Salesforce help", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Salesforce Help (help.salesforce.com) provides access to support resources and direct contact options for personalized assistance.",
+    "appearedInExam": true
+  },
+  {
+    "id": 71,
+    "text": "A Salesforce administrator has used Process Builder to create a process in which clients are updated for their cases via automated emails, he did this using no extensive coding. Which of the following approaches he used?",
+    "options": [
+      { "text": "Declarative coding", "value": "A" },
+      { "text": "Programmatic coding", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Process Builder uses declarative coding, allowing automation like email updates without extensive programming.",
+    "appearedInExam": true
+  },
+  {
+    "id": 72,
+    "text": "A Salesforce developer needs to create and test new customizations or integrations for their organization's Salesforce instance. Which of the following orgs should he use?",
+    "options": [
+      { "text": "Developer edition org", "value": "A" },
+      { "text": "Playground", "value": "B" },
+      { "text": "Sandbox", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Developer Edition orgs are free environments for creating and testing customizations and integrations, ideal for developers.",
+    "appearedInExam": true
+  },
+  {
+    "id": 73,
+    "text": "Acme Inc. and Widget Co. are sharing the same infrastructure, their data and customizations are kept separate and secure from each other. This allows Salesforce to provide a scalable and cost-effective solution for multiple organizations with different needs and requirements. What is this called?",
+    "options": [
+      { "text": "Multi tenancy", "value": "A" },
+      { "text": "Trust", "value": "B" },
+      { "text": "Scalability", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Multi-tenancy allows multiple organizations to share Salesforce infrastructure while keeping data and customizations secure and separate.",
+    "appearedInExam": true
+  },
+  {
+    "id": 74,
+    "text": "A retail company that wants to track customer orders, for doing so they are willing to create a few custom objects and relationships between them, which of the following Salesforce tools they should use to do the same?",
+    "options": [
+      { "text": "Object manager", "value": "A" },
+      { "text": "Account manager", "value": "B" },
+      { "text": "App Exchange", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Object Manager allows creation and management of custom objects and relationships for tracking customer orders.",
+    "appearedInExam": true
+  },
+  {
+    "id": 75,
+    "text": "What is the full form of ERP in Salesforce?",
+    "options": [
+      { "text": "Enterprise resource plot", "value": "A" },
+      { "text": "Enterprise resource planning", "value": "B" },
+      { "text": "Enterprise revenue planning", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "ERP stands for Enterprise Resource Planning, a system for managing business processes, often integrated with Salesforce.",
+    "appearedInExam": true
+  },
+  {
+    "id": 76,
+    "text": "Schema Builder is used to create a virtual representation of objects and their relationships.",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Schema Builder provides a visual representation of objects and their relationships, aiding in data model design.",
+    "appearedInExam": true
+  },
+  {
+    "id": 77,
+    "text": "A Salesforce associate wants to share a dashboard with 5 other associates so that they can subscribe for future updates, he/she should do which of the following actions?",
+    "options": [
+      { "text": "Share the screenshot of the dashboard", "value": "A" },
+      { "text": "Share the folder in which the dashboard is present", "value": "B" },
+      { "text": "Export Dashboard", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Sharing the folder containing the dashboard allows associates to access and subscribe to it for future updates.",
+    "appearedInExam": true
+  },
+  {
+    "id": 78,
+    "text": "Record (row) + field (column) = objects (table) Is this relation correct?",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "In Salesforce, an object is like a table, with records as rows and fields as columns, making the relation correct.",
+    "appearedInExam": true
+  },
+  {
+    "id": 79,
+    "text": "Which sharing type shares a single, common infrastructure and code base?",
+    "options": [
+      { "text": "Trust", "value": "A" },
+      { "text": "Multi - Tenant", "value": "B" },
+      { "text": "Meta-data", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Multi-tenancy shares a common infrastructure and code base while keeping each organization’s data and customizations separate.",
+    "appearedInExam": true
+  },
+  {
+    "id": 80,
+    "text": "A Salesforce user wants to load the latest data into a dashboard.",
+    "options": [
+      { "text": "Dashboard refresh", "value": "A" },
+      { "text": "Download the report", "value": "B" },
+      { "text": "Refresh browser tab", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Refreshing the dashboard updates it with the latest data from underlying reports.",
+    "appearedInExam": true
+  },
+  {
+    "id": 81,
+    "text": "A Salesforce associate at Get Cloudy Consulting needs a report of all active contacts grouped by Account. What is the first step in building this report?",
+    "options": [
+      { "text": "Create a contacts report with a filter on account", "value": "A" },
+      { "text": "Create a new report using contacts and account report type", "value": "B" },
+      { "text": "Create a joined report with accounts and contacts", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The first step is selecting the Contacts and Accounts report type to group active contacts by Account.",
+    "appearedInExam": true
+  },
+  {
+    "id": 82,
+    "text": "In Salesforce, deals in progress are known as?",
+    "options": [
+      { "text": "Lead", "value": "A" },
+      { "text": "Contact", "value": "B" },
+      { "text": "Opportunity", "value": "C" },
+      { "text": "Deal", "value": "D" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Opportunities in Salesforce represent deals in progress, tracking potential sales through various stages.",
+    "appearedInExam": true
+  },
+  {
+    "id": 83,
+    "text": "A Salesforce associate is learning to use page layouts, he wants to collaborate with other developers who are working on the same to implement the solution in a faster manner, where should he navigate to find other Salesforce associates to collaborate with?",
+    "options": [
+      { "text": "Ask a question in a Trailblazer community group", "value": "A" },
+      { "text": "Explore documentation on Salesforce help", "value": "B" },
+      { "text": "Search for modules in Trailhead", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The Trailblazer Community allows collaboration with other Salesforce users, ideal for discussing page layouts.",
+    "appearedInExam": true
+  },
+  {
+    "id": 84,
+    "text": "What is a collection of records?",
+    "options": [
+      { "text": "Opportunity", "value": "A" },
+      { "text": "Objects", "value": "B" },
+      { "text": "Leads", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Objects in Salesforce are collections of records, similar to tables in a database, storing related data.",
+    "appearedInExam": true
+  },
+  {
+    "id": 85,
+    "text": "When you refresh the data, Salesforce updates the data for everyone who has access.",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Refreshing data in Salesforce updates reports and dashboards for all users with access, ensuring current data visibility.",
+    "appearedInExam": true
+  },
+  {
+    "id": 86,
+    "text": "Get Cloudy Consulting (GCC) currently supports its customers via calls and emails. GCC wants to meet the needs of digitally savvy customers by offering support via web chat as well as SMS, Facebook Messenger, and WhatsApp. Which Salesforce product should meet this need?",
+    "options": [
+      { "text": "Service cloud", "value": "A" },
+      { "text": "Experience cloud", "value": "B" },
+      { "text": "Sales cloud", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Service Cloud supports omni-channel customer service, including web chat, SMS, and social media platforms like Facebook Messenger and WhatsApp.",
+    "appearedInExam": true
+  },
+  {
+    "id": 87,
+    "text": "Which of the following is a visualization tool for opportunity, to check deals organized by each stage in the pipeline?",
+    "options": [
+      { "text": "Dashboard", "value": "A" },
+      { "text": "Schema builder", "value": "B" },
+      { "text": "Kanban", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Kanban is a visualization tool in Salesforce that organizes opportunities by pipeline stage for easy tracking.",
+    "appearedInExam": true
+  },
+  {
+    "id": 88,
+    "text": "Can we convert a Lookup relationship into a Master-details relationship?",
+    "options": [
+      { "text": "True", "value": "A" },
+      { "text": "False", "value": "B" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A lookup relationship can be converted to a master-detail relationship if no null values exist in the lookup field and other conditions are met.",
+    "appearedInExam": true
+  },
+  {
+    "id": 89,
+    "text": "A Salesforce associate wants to edit a field within an opportunity record, he is unable to edit the field because he has no rights to do so. In this situation, what should the system administrator do?",
+    "options": [
+      { "text": "Deactivate the user", "value": "A" },
+      { "text": "Update the role", "value": "B" },
+      { "text": "Update permission sets", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Updating permission sets grants the associate field edit access without changing roles or deactivating the user.",
+    "appearedInExam": true
+  },
+  {
+    "id": 90,
+    "text": "A Salesforce associate wants to quickly create an org where they can learn, practice, and develop Salesforce skills. Which type of org should they create from within Trailhead?",
+    "options": [
+      { "text": "Developer Edition", "value": "A" },
+      { "text": "Sandbox", "value": "B" },
+      { "text": "Playground", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Developer Edition orgs, accessible via Trailhead, provide a free environment for learning and practicing Salesforce skills.",
+    "appearedInExam": true
+  },
+  {
+    "id": 91,
+    "text": "A Salesforce associate frequently views multiple reports located in different locations. What is an efficient way to navigate to reports quickly?",
+    "options": [
+      { "text": "Add each report to the browser's bookmark", "value": "A" },
+      { "text": "Add report to their personal homepage", "value": "B" },
+      { "text": "Add the reports to my favorites", "value": "C" }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Adding reports to favorites in Salesforce allows quick access from the user’s interface, streamlining navigation.",
+    "appearedInExam": true
+  },
+  {
+    "id": 92,
+    "text": "An organization is migrating its cloud CRM to Salesforce, an associate (the lead of this migration) has decided to create learning content on the Trailhead platform in the form of multiple modules targeting the same content and basic Salesforce content. What should he do?",
+    "options": [
+      { "text": "Salesforce help portal", "value": "A" },
+      { "text": "He should create a trailmix", "value": "B" },
+      { "text": "Learn via books", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Trailmixes on Trailhead allow the creation of custom learning paths combining modules and projects for migration training.",
+    "appearedInExam": true
+  },
+  {
+    "id": 93,
+    "text": "What is metadata in Salesforce?",
+    "options": [
+      { "text": "An app on AppExchange", "value": "A" },
+      { "text": "Data about data", "value": "B" },
+      { "text": "Data model too", "value": "C" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Metadata in Salesforce describes the structure and configuration of data, such as objects, fields, and layouts.",
+    "appearedInExam": true
+  },
+  {
+    "id": 94,
+    "text": "What is the maximum number of rows that will display within a report?",
+    "options": [
+      { "text": "2000", "value": "A" },
+      { "text": "20000", "value": "B" },
+      { "text": "2500", "value": "C" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Salesforce reports display up to 2,000 rows to maintain performance and usability.",
+    "appearedInExam": true
+  },
+  {
+    "id": 95,
+    "text": "Can you create custom objects in Salesforce?",
+    "options": [
+      { "text": "No", "value": "A" },
+      { "text": "YES", "value": "B" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Salesforce allows the creation of custom objects to store unique data tailored to an organization’s needs.",
+    "appearedInExam": true
+  },
   {
     "id": 96,
     "text": "A Salesforce associate wants to add a new related list of cases to Account. Where should the associate go to add the related list to Account?",
