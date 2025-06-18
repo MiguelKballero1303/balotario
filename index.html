@@ -2630,126 +2630,270 @@
     "explanation": "Company Information in Setup provides details on the number of available Salesforce licenses for new user assignments.",
     "appearedInExam": false
   },
-         {
-    "id": 218,
-    "text": "Which Trailhead feature should Get Cloudy Consulting use to create a custom learning path for its employees?",
-    "options": [
-      { "text": "Trailmixes", "value": "A" },
-      { "text": "Modules", "value": "B" },
-      { "text": "Projects", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Trailmixes allow Get Cloudy Consulting to create custom learning paths by combining modules, projects, and badges tailored to their employees' needs.",
-    "appearedInExam": true
-  },
-  {
-    "id": 219,
-    "text": "A Salesforce associate tries to create a new user in a sandbox using ‘Astro@getcloudy.org’ as the username and it fails. What is the problem with creating the ‘Astro@getcloudy.org’ username?",
-    "options": [
-      { "text": "Salesforce usernames must be unique across all Salesforce orgs and that one is already in use.", "value": "A" },
-      { "text": "Salesforce usernames must include the user’s full name and be formatted like an email address.", "value": "B" },
-      { "text": "Salesforce usernames must be formatted like an email address with .com at the end.", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Salesforce usernames must be unique across all Salesforce organizations, and if ‘Astro@getcloudy.org’ is already in use, the creation will fail.",
-    "appearedInExam": true
-  },
-  {
-    "id": 220,
-    "text": "Which platform architecture shares a single, common infrastructure and code base?",
-    "options": [
-      { "text": "Trust", "value": "A" },
-      { "text": "Multitenant", "value": "B" },
-      { "text": "Metadata", "value": "C" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Salesforce’s Multitenant architecture allows multiple organizations to share a single infrastructure and code base while keeping data isolated.",
-    "appearedInExam": true
-  },
-  {
-    "id": 221,
-    "text": "An online retail company uses Sales Cloud and Marketing Cloud. The company’s Salesforce associate needs help while working in Marketing Cloud and wants to hear other Salesforce professionals’ opinions. They would like to post a question that anyone around the globe who is familiar with Salesforce can answer. Which resource should they use?",
-    "options": [
-      { "text": "Salesforce Help", "value": "A" },
-      { "text": "Trailblazer Community", "value": "B" },
-      { "text": "Trailhead Academy", "value": "C" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The Trailblazer Community is a global platform where Salesforce professionals can post questions and receive answers from peers worldwide.",
-    "appearedInExam": true
-  },
-  {
-    "id": 222,
-    "text": "A college wants to incorporate Salesforce into its admissions program using Program Enrollment and Course Connections. Which Salesforce cloud provides these features as standard offerings?",
-    "options": [
-      { "text": "Experience Cloud", "value": "A" },
-      { "text": "Education Cloud", "value": "B" },
-      { "text": "Marketing Cloud", "value": "C" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Education Cloud offers Program Enrollment and Course Connections as standard features, tailored for managing educational admissions processes.",
-    "appearedInExam": true
-  },
-  {
-    "id": 223,
-    "text": "Which Salesforce role should help companies increase campaign effectiveness, reengage inactive customers, and grow their customer base?",
-    "options": [
-      { "text": "Marketer", "value": "A" },
-      { "text": "Designer", "value": "B" },
-      { "text": "Consultant", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "The Marketer role leverages Marketing Cloud to optimize campaigns, reengage inactive customers, and expand the customer base.",
-    "appearedInExam": true
-  },
-  {
-    "id": 224,
-    "text": "A Salesforce standard profile end user is looking for specific information on an Opportunity record page. They are overwhelmed by the required scrolling to see the page. What can the user do to simplify the page?",
-    "options": [
-      { "text": "Collapse detail sections.", "value": "A" },
-      { "text": "Remove activities.", "value": "B" },
-      { "text": "Change page layout assignment.", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Collapsing detail sections on the Opportunity record page reduces scrolling and simplifies the view without requiring administrative changes.",
-    "appearedInExam": true
-  },
-  {
-    "id": 225,
-    "text": "A Salesforce associate wants a visual summary of opportunities in a list view. The associate would like to summarize, filter, and move opportunities along the pipeline. What should they do to meet this requirement?",
-    "options": [
-      { "text": "Create an Opportunities Kanban View.", "value": "A" },
-      { "text": "Create an Opportunity List View.", "value": "B" },
-      { "text": "Create an Opportunity Summary report.", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "An Opportunities Kanban View provides a visual pipeline summary, allowing filtering and drag-and-drop movement of opportunities.",
-    "appearedInExam": true
-  },
-  {
-    "id": 226,
-    "text": "A Salesforce associate is using Global Search to find a record but does not remember the exact name of the record they want to find. What should the associate use to search for the record?",
-    "options": [
-      { "text": "Wildcards and operators", "value": "A" },
-      { "text": "List View for each object", "value": "B" },
-      { "text": "Object Manager", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Wildcards (e.g., *, ?) and operators in Global Search enable finding records with partial or approximate names efficiently.",
-    "appearedInExam": true
-  },
-  {
-    "id": 227,
-    "text": "A Salesforce associate recently relocated from Get Cloudy Consulting’s San Francisco office to its new London office. The associate wants to change their personal work hours information in the Salesforce org to reflect their new time zone. Which method is easiest to change these settings?",
-    "options": [
-      { "text": "Submit a case with Salesforce support", "value": "A" },
-      { "text": "My Personal Information > Language & Time Zone", "value": "B" },
-      { "text": "Go to Setup > Company Information > Default Time Zone", "value": "C" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "The easiest method is updating the time zone in My Personal Information under Language & Time Zone in Personal Settings.",
-    "appearedInExam": true
-  }
+      {
+"id": 218,
+"text": "Get Cloudy Consulting (GCC) wants to build one dashboard for Leads and Opportunities. GCC want the data to be displayed based on the logged-in user's security setting. Which type of dashboard should this be?",
+"options": [
+{ "text": "Static", "value": "A" },
+{ "text": "Dynamic", "value": "B" },
+{ "text": "Standard", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "A static dashboard is appropriate when the data should be displayed based on the logged-in user's security settings.",
+"appearedInExam": false
+},
+{
+"id": 219,
+"text": "A sales manager at Get Cloudy Consulting wants a report that shows their top-selling product families by quantity.",
+"options": [
+{ "text": "Group by opportunity stage > Filter by product family > Sum the total number sold", "value": "A" },
+{ "text": "Group by product family > Filter to show only Closed Won opportunities > Sum the total number sold", "value": "B" },
+{ "text": "Group by active products > Filter to show opportunities this year > Sum the quantity", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Grouping by product family and filtering for Closed Won opportunities provides the top-selling product families by quantity.",
+"appearedInExam": false
+},
+{
+"id": 220,
+"text": "A Salesforce associate is asked to share records about a carpool program with users. Which type of group should the associate create?",
+"options": [
+{ "text": "Private Group(s)", "value": "A" },
+{ "text": "Public Group(s)", "value": "B" },
+{ "text": "A Queue", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "A public group is suitable for sharing records with multiple users.",
+"appearedInExam": false
+},
+{
+"id": 221,
+"text": "Refer to the screenshot that shows the top portion of the Salesforce Service app with areas labeled A, B, and C. Get Cloudy Consulting (GCC) offers sales and services consoles to meet the various needs of its end users? Where should GCC end users go to change to the Sales Console.",
+"options": [
+{ "text": "App Launcher icon (Label A)", "value": "A" },
+{ "text": "Search bar (Label B)", "value": "B" },
+{ "text": "A dropdown in the navigation bar (Label C)", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "The App Launcher icon (Label A) allows users to switch between different consoles like Sales Console.",
+"appearedInExam": false
+},
+{
+"id": 222,
+"text": "Sales reps at Get Cloudy Consulting want to see a visual representation of their emails and phone calls with a contact. Which contact record component must be present so user can see this?",
+"options": [
+{ "text": "Activity Capture", "value": "A" },
+{ "text": "Salesforce Inbox", "value": "B" },
+{ "text": "Activities Timeline", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "Activity Capture provides a visual representation of emails and phone calls with a contact.",
+"appearedInExam": false
+},
+{
+"id": 223,
+"text": "A Salesforce associate wants to learn more about an app to see if it would be a good fit for a business need, but they are not a system administrator. Where can they learn more about the app?",
+"options": [
+{ "text": "AppExchange", "value": "A" },
+{ "text": "Trailhead", "value": "B" },
+{ "text": "Global Search", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Trailhead offers learning resources for Salesforce associates to explore apps without administrative access.",
+"appearedInExam": false
+},
+{
+"id": 224,
+"text": "A Salesforce associate reviews a report that shows more information than they need. The associated see individual records but only wants to see the Record Count.",
+"options": [
+{ "text": "Row Counts and Grand Total", "value": "A" },
+{ "text": "Subtotals and Detail Rows", "value": "B" },
+{ "text": "Grand Total and Subtotals", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "Row Counts and Grand Total allows the associate to see only the record count without individual records.",
+"appearedInExam": false
+},
+{
+"id": 225,
+"text": "Cloud Kicks (CK) became a North American subsidiary of Get Cloudy Consulting (GCC). What should the Salesforce associate do to show that GCC is part of the CK portfolio when creating the CK Account record?",
+"options": [
+{ "text": "View account hierarchy and select Add Child Account.", "value": "A" },
+{ "text": "Select New on the child accounts related list.", "value": "B" },
+{ "text": "Add Get Cloudy Consulting to the Parent Account field", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "Viewing the account hierarchy and adding a child account establishes the relationship between CK and GCC.",
+"appearedInExam": false
+},
+{
+"id": 226,
+"text": "A Salesforce associate at Get Cloudy Consulting is configuring object Access. The requirements are: Sales Manager must have the same Access to Opportunities. Marketing managers must have the same Access to Campaigns. What is the recommend approach to configuring their Access?",
+"options": [
+{ "text": "Sharing Sets and Manual Sharing", "value": "A" },
+{ "text": "Validation and Assignment Rules", "value": "B" },
+{ "text": "Profiles and Permission Sets", "value": "C" }
+],
+"correctAnswer": "C",
+"explanation": "Profiles and Permission Sets are the recommended approach for configuring consistent access for specific roles.",
+"appearedInExam": false
+},
+{
+"id": 227,
+"text": "A salesforce associate at Get Cloudy Consulting has been asked to analyze Service Cloud data to determine how many individual have called in to the support center. Which relationship on Case should the associate use?",
+"options": [
+{ "text": "Owner", "value": "A" },
+{ "text": "Account", "value": "B" },
+{ "text": "Contact", "value": "C" }
+],
+"correctAnswer": "C",
+"explanation": "The Contact relationship on Case provides data on individuals who called the support center.",
+"appearedInExam": false
+},
+{
+"id": 228,
+"text": "A marketing manager wants to make the Reason Lost field required on the opportunity when he stage is changed to Closed Lost. What should the salesforce associate do to enforce this requirement?",
+"options": [
+{ "text": "Make the field required on the page layout.", "value": "A" },
+{ "text": "Create a validation rule on the Opportunity object.", "value": "B" },
+{ "text": "Make the field universally required.", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "A validation rule on the Opportunity object can enforce the Reason Lost field requirement when the stage is Closed Lost.",
+"appearedInExam": false
+},
+{
+"id": 229,
+"text": "A Salesforce associate at Get Cloudy Consulting is working with a user to view multiple records and their related records on the same screen. Currently, the user uses multiple browser tabs. Which app should the associate recommend for the user to view multiple records and their related records on one screen?",
+"options": [
+{ "text": "Salesforce Lightning Page", "value": "A" },
+{ "text": "Salesforce Lightning Console", "value": "B" },
+{ "text": "Salesforce Dashboard", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Salesforce Lightning Console allows users to view multiple records and their related records on one screen.",
+"appearedInExam": false
+},
+{
+"id": 230,
+"text": "How can a user see only contacts from a specific city on the 'New This Week' list view without changing what other users see?",
+"options": [
+{ "text": "Change the permissions so they can only see records from the specific city.", "value": "A" },
+{ "text": "Clone the list view with a new name, and filter by the specific city.", "value": "B" },
+{ "text": "Build a private report for contacts that is filtered by the specific city.", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Cloning the list view and filtering by the specific city allows the user to customize their view without affecting others.",
+"appearedInExam": false
+},
+{
+"id": 231,
+"text": "Salesforce is built on objects like Account, Contact, and Opportunity. What is a representation of an object?",
+"options": [
+{ "text": "A spreadsheet where the records are rows and the fields are columns", "value": "A" },
+{ "text": "Physical visualization of an Account, Contact, or Opportunity", "value": "B" },
+{ "text": "A set of relationships that link an Account, Contact, or Opportunity", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "An object in Salesforce is represented as a spreadsheet with records as rows and fields as columns.",
+"appearedInExam": false
+},
+{
+"id": 232,
+"text": "A Salesforce associate is creating new user accounts for a new project management team. What will be the role of each new team member",
+"options": [
+{ "text": "End User", "value": "A" },
+{ "text": "Developer", "value": "B" },
+{ "text": "Builder", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "New project management team members creating user accounts are typically assigned the Developer role.",
+"appearedInExam": false
+},
+{
+"id": 233,
+"text": "Which Salesforce role produces data-driven solutions by eliciting, documenting, and examining requirements around organizational challenges?",
+"options": [
+{ "text": "Business Analyst", "value": "A" },
+{ "text": "User Experience Designer", "value": "B" },
+{ "text": "Platform Developer", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "A Business Analyst is responsible for producing data-driven solutions by analyzing organizational requirements.",
+"appearedInExam": false
+},
+{
+"id": 234,
+"text": "Get Cloudy Consulting (GCC) plans to migrate from a legacy CRM system to Salesforce. GCC currently uses a dedicated single-tenant, on-premise system and wants to utilize a multi-tenant architecture like Salesforce uses. What is one feature of multi-tenant architecture?",
+"options": [
+{ "text": "Resources are shared but tenants cannot claim each others resources.", "value": "A" },
+{ "text": "Resources are shared and tenants can claim each other's resources.", "value": "B" },
+{ "text": "Resources are limited to each tenant.", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "Multi-tenant architecture shares resources while ensuring tenants cannot access each other's resources.",
+"appearedInExam": false
+},
+{
+"id": 235,
+"text": "Get Cloudy Consulting wants to evaluate a new feature that requires a specific license before purchasing. Which environment should be used?",
+"options": [
+{ "text": "Developer org", "value": "A" },
+{ "text": "Developer sandbox", "value": "B" },
+{ "text": "Scratch org", "value": "C" }
+],
+"correctAnswer": "A",
+"explanation": "A Developer org is suitable for evaluating new features requiring a specific license before purchasing.",
+"appearedInExam": false
+},
+{
+"id": 236,
+"text": "Which approach should GCC explore first?",
+"options": [
+{ "text": "A programmatic approach, unless there is a lack of resources", "value": "A" },
+{ "text": "A declarative approach, as it allows for quicker and simpler problem resolution", "value": "B" },
+{ "text": "A programmatic approach, as it is more customizable.", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "A declarative approach is recommended first for quicker and simpler problem resolution.",
+"appearedInExam": false
+},
+{
+"id": 237,
+"text": "An insurance call center is experiencing increased policy support calls which has led to long wait times and disappointed customers. Which cloud will decrease the number of incoming calls, empower customers, and increase satisfaction?",
+"options": [
+{ "text": "CRM Analytics", "value": "A" },
+{ "text": "Experience", "value": "B" },
+{ "text": "Cloud Sales Cloud", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "The Experience cloud can empower customers with self-service options, reducing incoming calls and increasing satisfaction.",
+"appearedInExam": false
+},
+{
+"id": 238,
+"text": "Get Cloudy Consulting (GCC) is experiencing significant performance degradation. What should GCC do to quickly verify if a performance incident has been reported on its instance of Salesforce?",
+"options": [
+{ "text": "Ask a question on the Trailblazer Community.", "value": "A" },
+{ "text": "Check System Status on the Trust site.", "value": "B" },
+{ "text": "Open a case with Salesforce Support.", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Checking System Status on the Trust site provides quick verification of performance incidents.",
+"appearedInExam": false
+},
+{
+"id": 239,
+"text": "Get Cloudy Consulting (GCC) wants to customize its Sales application’s Home tab with additional components. Outside of the org, where should GCC Salesforce associate go to collaborate with others on solutions that might resonate with GCC users?",
+"options": [
+{ "text": "Explore documents In Help and Training.", "value": "A" },
+{ "text": "Ask a question In a Trailblazer Community Group.", "value": "B" },
+{ "text": "Search for modules in Trailhead.", "value": "C" }
+],
+"correctAnswer": "B",
+"explanation": "Asking a question in a Trailblazer Community Group allows collaboration with others outside the org.",
+"appearedInExam": false
+}
 ];
 
     // Componente React para el cuestionario
