@@ -2895,105 +2895,121 @@
 "appearedInExam": false
 }
 ];
+  // Componente React para el cuestionario
+  const QuizApp = () => {
+  const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
+  const [selectedAnswer, setSelectedAnswer] = React.useState(null);
+  const [showExplanation, setShowExplanation] = React.useState(false);
+  const [score, setScore] = React.useState(0);
+  const [shuffledQuestions, setShuffledQuestions] = React.useState([]);
 
-    // Componente React para el cuestionario
-    const QuizApp = () => {
-      const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
-      const [selectedAnswer, setSelectedAnswer] = React.useState(null);
-      const [showExplanation, setShowExplanation] = React.useState(false);
-      const [score, setScore] = React.useState(0);
+  // Mezclar preguntas al montar el componente
+  React.useEffect(() => {
+    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    setShuffledQuestions(shuffled);
+  }, []);
 
-      const currentQuestion = questions[currentQuestionIndex];
+  const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
-      const handleAnswerSelect = (value) => {
-        setSelectedAnswer(value);
-      };
+  const handleAnswerSelect = (value) => {
+    setSelectedAnswer(value);
+  };
 
-      const handleSubmit = () => {
-        if (selectedAnswer === currentQuestion.correctAnswer) {
-          setScore(score + 1);
-        }
-        setShowExplanation(true);
-      };
+  const handleSubmit = () => {
+    if (selectedAnswer === currentQuestion.correctAnswer) {
+      setScore(score + 1);
+    }
+    setShowExplanation(true);
+  };
 
-      const handleNextQuestion = () => {
-        setSelectedAnswer(null);
-        setShowExplanation(false);
-        setCurrentQuestionIndex(currentQuestionIndex + 1);
-      };
+  const handleNextQuestion = () => {
+    setSelectedAnswer(null);
+    setShowExplanation(false);
+    setCurrentQuestionIndex(currentQuestionIndex + 1);
+  };
 
-      return (
-        <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
-          <h1 className="text-2xl font-bold mb-4 text-center">Cuestionario Salesforce Associate</h1>
-          <p className="text-lg mb-4">
-            Pregunta {currentQuestionIndex + 1} de {questions.length}
-          </p>
-          <p className="text-lg mb-4">{currentQuestion.text}</p>
-          <div className="space-y-2">
-            {currentQuestion.options.map((option) => (
-              <label
-                key={option.value}
-                className={`block p-2 border rounded cursor-pointer ${
-                  selectedAnswer === option.value ? 'bg-blue-100' : 'bg-white'
+  // Esperar a que las preguntas se mezclen
+  if (shuffledQuestions.length === 0) {
+    return <p className="text-center text-gray-500">Cargando preguntas...</p>;
+  }
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl w-full">
+      <h1 className="text-2xl font-bold mb-4 text-center">Cuestionario Salesforce Associate</h1>
+      <p className="text-lg mb-4">
+        Pregunta {currentQuestionIndex + 1} de {shuffledQuestions.length}
+      </p>
+      <p className="text-lg mb-4">{currentQuestion.text}</p>
+      <div className="space-y-2">
+        {currentQuestion.options.map((option) => (
+          <label
+            key={option.value}
+            className={`block p-2 border rounded cursor-pointer ${
+              selectedAnswer === option.value ? 'bg-blue-100' : 'bg-white'
+            }`}
+          >
+            <input
+              type="radio"
+              name="answer"
+              value={option.value}
+              checked={selectedAnswer === option.value}
+              onChange={() => handleAnswerSelect(option.value)}
+              className="mr-2"
+              disabled={showExplanation}
+            />
+            {option.text}
+          </label>
+        ))}
+      </div>
+      {!showExplanation ? (
+        <button
+          onClick={handleSubmit}
+          disabled={!selectedAnswer}
+          className={`mt-4 w-full p-2 rounded ${
+            selectedAnswer ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-500'
+          }`}
+        >
+          Enviar Respuesta
+        </button>
+      ) : (
+        <div className="mt-4">
+          <p
+            className={`text-lg ${
+              selectedAnswer === currentQuestion.correctAnswer ? 'text-green-600' : 'text-red-600'
+            }`}
+          >
+            {selectedAnswer === currentQuestion.correctAnswer
+              ? '¡Correcto!'
+              : `Incorrecto. La respuesta correcta es: ${
+                  currentQuestion.options.find((opt) => opt.value === currentQuestion.correctAnswer).text
                 }`}
-              >
-                <input
-                  type="radio"
-                  name="answer"
-                  value={option.value}
-                  checked={selectedAnswer === option.value}
-                  onChange={() => handleAnswerSelect(option.value)}
-                  className="mr-2"
-                  disabled={showExplanation}
-                />
-                {option.text}
-              </label>
-            ))}
-          </div>
-          {!showExplanation ? (
+          </p>
+          <p className="text-gray-700 mt-2">Explicación: {currentQuestion.explanation}</p>
+          {currentQuestionIndex < shuffledQuestions.length - 1 ? (
             <button
-              onClick={handleSubmit}
-              disabled={!selectedAnswer}
-              className={`mt-4 w-full p-2 rounded ${
-                selectedAnswer ? 'bg-blue-500 text-white' : 'bg-gray-300 text-gray-500'
-              }`}
+              onClick={handleNextQuestion}
+              className="mt-4 w-full p-2 bg-blue-500 text-white rounded"
             >
-              Enviar Respuesta
+              Siguiente Pregunta
             </button>
           ) : (
             <div className="mt-4">
-              <p className={`text-lg ${selectedAnswer === currentQuestion.correctAnswer ? 'text-green-600' : 'text-red-600'}`}>
-                {selectedAnswer === currentQuestion.correctAnswer
-                  ? '¡Correcto!'
-                  : `Incorrecto. La respuesta correcta es: ${currentQuestion.options.find(
-                      (opt) => opt.value === currentQuestion.correctAnswer
-                    ).text}`}
+              <p className="text-lg font-bold">¡Cuestionario Completado!</p>
+              <p>
+                Tu puntuación: {score} de {shuffledQuestions.length} (
+                {((score / shuffledQuestions.length) * 100).toFixed(2)}%)
               </p>
-              <p className="text-gray-700 mt-2">Explicación: {currentQuestion.explanation}</p>
-              {currentQuestionIndex < questions.length - 1 ? (
-                <button
-                  onClick={handleNextQuestion}
-                  className="mt-4 w-full p-2 bg-blue-500 text-white rounded"
-                >
-                  Siguiente Pregunta
-                </button>
-              ) : (
-                <div className="mt-4">
-                  <p className="text-lg font-bold">¡Cuestionario Completado!</p>
-                  <p>
-                    Tu puntuación: {score} de {questions.length} ({((score / questions.length) * 100).toFixed(2)}%)
-                  </p>
-                </div>
-              )}
             </div>
           )}
         </div>
-      );
-    };
+      )}
+    </div>
+  );
+};
 
-    // Renderizar la aplicación
-    const root = ReactDOM.createRoot(document.getElementById('root'));
-    root.render(<QuizApp />);
+// Renderizar la aplicación
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<QuizApp />);
   </script>
 </body>
 </html>
