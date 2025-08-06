@@ -14,1111 +14,1081 @@
   <script type="text/babel">
     const questions = [
 {
-    "id": 1,
-    "text": "Con el fin de lograr prevenir la amenaza del tipo de errores criptográficos, decide almacenar la clave criptográfica junto con los datos que se están respaldando. ¿Esto logrará impedir que se materialice la amenaza?",
-    "options": [
-      { "text": "Verdadero", "value": "A" },
-      { "text": "Falso", "value": "B" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Almacenar la clave criptográfica junto con los datos respaldados no previene errores criptográficos, ya que compromete la seguridad de la clave al hacerla accesible junto con los datos, aumentando el riesgo de exposición.",
-    "appearedInExam": false
-  },
-  {
-    "id": 2,
-    "text": "Una tienda de alimentos quiere que los usuarios puedan escanear códigos de barras con la cámara del teléfono. ¿Qué tipo de desarrollo sería más adecuado?",
-    "options": [
-      { "text": "Aplicación web simple", "value": "A" },
-      { "text": "Basado en la nube", "value": "B" },
-      { "text": "Nativo", "value": "C" },
-      { "text": "Híbrido", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Una aplicación nativa es más adecuada porque permite un acceso directo y eficiente a la cámara del dispositivo, ofreciendo mejor rendimiento y experiencia de usuario para escanear códigos de barras.",
-    "appearedInExam": false
-  },
-  {
-    "id": 3,
-    "text": "Una aplicación LAMP ha personalizado las pantallas de error predeterminadas y gestiona los errores de manera correcta, de tal forma que no revela ningún detalle de la aplicación y solo devuelve al usuario lo mínimo que necesita saber. De acuerdo a esto, ¿qué requerimiento de seguridad se está cumpliendo?",
-    "options": [
-      { "text": "Requerimiento de seguimiento", "value": "A" },
-      { "text": "Compartir bibliotecas con otros desarrolladores", "value": "B" },
-      { "text": "Usar una sola biblioteca", "value": "C" },
-      { "text": "No usar bibliotecas externas", "value": "D" }
-    ],
-    "correctAnswer": "None",
-    "explanation": "La respuesta proporcionada (B) no es correcta, ya que compartir bibliotecas no se relaciona con la gestión de errores. La práctica descrita cumple con el principio de confidencialidad y minimización de exposición, pero ninguna opción lo refleja directamente.",
-    "appearedInExam": false
-  },
-  {
-    "id": 4,
-    "text": "¿Qué acción puede prevenir vulnerabilidades al trabajar con bibliotecas de terceros?",
-    "options": [
-      { "text": "Mantener las bibliotecas actualizadas", "value": "A" },
-      { "text": "Compartir bibliotecas con otros desarrolladores", "value": "B" },
-      { "text": "Usar una sola biblioteca", "value": "C" },
-      { "text": "No usar bibliotecas externas", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Mantener las bibliotecas de terceros actualizadas reduce el riesgo de vulnerabilidades conocidas, ya que las actualizaciones suelen incluir parches de seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 5,
-    "text": "¿Cuál es la característica fundamental que deben tener los ciclos de vida de desarrollo de software seguros (S-SDLC)?",
-    "options": [
-      { "text": "Confidencialidad, integridad y disponibilidad", "value": "A" },
-      { "text": "Simplificación de todas las fases del proyecto", "value": "B" },
-      { "text": "Alto nivel de complejidad", "value": "C" },
-      { "text": "Eliminar todas las vulnerabilidades", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "El S-SDLC se centra en garantizar confidencialidad, integridad y disponibilidad, integrando prácticas de seguridad en todas las fases del desarrollo para proteger los datos y sistemas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 7,
-    "text": "Durante el proceso de desarrollo de un modelo de IA para diagnóstico médico, los desarrolladores implementan un mecanismo que permite identificar y eliminar datos maliciosos antes de que sean utilizados para entrenar el modelo. ¿Qué medida están tomando los desarrolladores?",
-    "options": [
-      { "text": "Defensa adversarial", "value": "A" },
-      { "text": "Monitoreo de comportamiento", "value": "B" },
-      { "text": "Pruebas de caja negra", "value": "C" },
-      { "text": "Verificación y limpieza de datos", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "La verificación y limpieza de datos implica identificar y eliminar datos maliciosos o erróneos antes de usarlos en el entrenamiento, asegurando la calidad y seguridad del modelo de IA.",
-    "appearedInExam": false
-  },
-  {
-    "id": 8,
-    "text": "Cuando trabajamos con lenguajes de programación, C# de .Net puede ser considerado un lenguaje:",
-    "options": [
-      { "text": "Interpretado", "value": "A" },
-      { "text": "Híbrido", "value": "B" },
-      { "text": "Ensamblador", "value": "C" },
-      { "text": "Compilado", "value": "E" },
-      { "text": "Alto nivel", "value": "F" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "C# es un lenguaje híbrido, ya que se compila a código intermedio (IL) y se ejecuta en un entorno gestionado por CLR, combinando características de lenguajes compilados e interpretados.",
-    "appearedInExam": false
-  },
-  {
-    "id": 10,
-    "text": "¿Qué significa el término MTD en el contexto de disponibilidad?",
-    "options": [
-      { "text": "Máximo duración del tiempo operativo", "value": "A" },
-      { "text": "Tiempo máximo tolerable de inactividad", "value": "B" },
-      { "text": "Tiempo permitido para reiniciar el servidor", "value": "C" },
-      { "text": "Tiempo para recuperar operaciones", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "MTD (Maximum Tolerable Downtime) se refiere al tiempo máximo que un sistema puede estar inactivo sin causar impactos significativos en las operaciones.",
-    "appearedInExam": false
-  },
-  {
-    "id": 11,
-    "text": "Los parámetros de consulta de URL se utilizan a menudo para transmitir argumentos de solicitud a un servidor; sin embargo, son visibles al menos en los registros del servidor, y a menudo también en el análisis del sitio web y posiblemente en el historial del navegador local. ¿Qué amenaza se describe en el ejemplo anterior?",
-    "options": [
-      { "text": "Autenticación/Autorización insegura", "value": "A" },
-      { "text": "Protecciones binarias insuficientes", "value": "B" },
-      { "text": "Validación de entrada/salida insuficiente", "value": "C" },
-      { "text": "Controles de privacidad inadecuados", "value": "D" },
-      { "text": "Comunicación insegura", "value": "E" },
-      { "text": "Uso inadecuado de credenciales", "value": "F" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "La visibilidad de parámetros de consulta en registros o historiales representa controles de privacidad inadecuados, ya que expone datos sensibles a partes no autorizadas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 12,
-    "text": "Un equipo de DevOps necesita identificar vulnerabilidades asociadas con la autenticación de usuarios y la inyección SQL en su aplicación. ¿Qué herramientas debería usar en el pipeline?",
-    "options": [
-      { "text": "Herramientas de pruebas dinámica de aplicaciones (DAST)", "value": "A" },
-      { "text": "Plataformas de administración de artefactos", "value": "B" },
-      { "text": "Consolas de gestión de la nube", "value": "C" },
-      { "text": "Herramientas de prueba estática de aplicaciones (SAST)", "value": "D" }
-    ],
-    "correctAnswer": "A, D",
-    "explanation": "DAST y SAST son adecuadas: SAST analiza el código fuente para detectar vulnerabilidades como inyección SQL, mientras que DAST prueba la aplicación en ejecución para identificar problemas de autenticación.",
-    "appearedInExam": false
-  },
-  {
-    "id": 13,
-    "text": "¿Qué herramienta ayuda a proteger las aplicaciones web de tráfico malicioso?",
-    "options": [
-      { "text": "Las vulnerabilidades del código abierto", "value": "A" },
-      { "text": "Los cortafuegos de aplicaciones web (WAF)", "value": "B" },
-      { "text": "Los Scripts de validación", "value": "C" },
-      { "text": "Las API de terceros", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Un WAF (Web Application Firewall) protege aplicaciones web filtrando y bloqueando tráfico malicioso, como intentos de inyección o ataques XSS.",
-    "appearedInExam": false
-  },
-  {
-    "id": 14,
-    "text": "Se produce cuando las API procesan solicitudes de direcciones URL controladas por el usuario y obtienen recursos remotos del servidor para validar la solicitud del usuario.",
-    "options": [
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
-      { "text": "Gestión inadecuada del inventario", "value": "B" },
-      { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "C" },
-      { "text": "Autorización de nivel de propiedad de objetivo roto", "value": "D" },
-      { "text": "Autorización de nivel de función rota", "value": "E" },
-      { "text": "Configuración incorrecta de seguridad", "value": "F" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "La falsificación de solicitudes del lado del servidor (SSRF) ocurre cuando un atacante manipula URLs para que el servidor obtenga recursos no autorizados, explotando la confianza del servidor.",
-    "appearedInExam": false
-  },
-  {
-    "id": 15,
-    "text": "¿Qué derecho permite a los usuarios rechazar el uso de sus datos para fines específicos, como el entrenamiento de modelos?",
-    "options": [
-      { "text": "Derecho de acceso/portabilidad", "value": "A" },
-      { "text": "Derecho de corrección", "value": "B" },
-      { "text": "Derecho de eliminación", "value": "C" },
-      { "text": "Derecho de oposición", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "El derecho de oposición permite a los usuarios rechazar el uso de sus datos para fines específicos, como el entrenamiento de modelos, según regulaciones como GDPR.",
-    "appearedInExam": false
-  },
-  {
-    "id": 16,
-    "text": "Con el fin de lograr prevenir la amenaza del tipo Componentes vulnerables y obsoletos, decide usar herramientas configuradas con valores predeterminados para evitar introducir una configuración insegura. ¿Esto logrará impedir que se materialice la amenaza?",
-    "options": [
-      { "text": "Falso", "value": "A" },
-      { "text": "Verdadero", "value": "B" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Usar configuraciones predeterminadas no previene directamente la amenaza de componentes vulnerables y obsoletos, ya que esta se mitiga actualizando y verificando las versiones de los componentes.",
-    "appearedInExam": false
-  },
-  {
-    "id": 17,
-    "text": "¿Cuál es la etapa inicial del SDLC?",
-    "options": [
-      { "text": "Diseño", "value": "A" },
-      { "text": "Desarrollo", "value": "B" },
-      { "text": "Implementación", "value": "C" },
-      { "text": "Planificación", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "La etapa inicial del SDLC (Software Development Life Cycle) es la planificación, donde se definen los objetivos, requisitos y recursos del proyecto.",
-    "appearedInExam": false
-  },
-  {
-    "id": 18,
-    "text": "Imagine que una empresa de software ha decidido implementar SCA en su proceso de desarrollo para mejorar la calidad y seguridad de sus aplicaciones. El equipo de desarrollo desea asegurarse de que todas las posibles vulnerabilidades y errores de codificación se detecten antes del lanzamiento de la aplicación. ¿Cuál de las siguientes afirmaciones describe mejor el papel de SCA en este escenario?",
-    "options": [
-      { "text": "SCA detecta vulnerabilidades de seguridad sólo cuando la aplicación está en ejecución, lo que hace que no sea útil para este caso", "value": "A" },
-      { "text": "SCA solo se enfoca en encontrar vulnerabilidades en aplicaciones móviles, no es útil para aplicaciones web", "value": "B" },
-      { "text": "SCA ayuda a encontrar vulnerabilidades de seguridad sin necesidad de ejecutar la aplicación, permitiendo detectar problemas en componentes de terceros a lo largo del ciclo de desarrollo", "value": "C" },
-      { "text": "SCA solo se utiliza para evaluar el rendimiento de la aplicación, no tiene impacto en la calidad o seguridad del código", "value": "D" },
-      { "text": "SCA reemplaza todas las pruebas de seguridad y calidad necesarias, eliminando la necesidad de realizar revisiones murales o pruebas dinámicas", "value": "E" },
-      { "text": "SCA analiza el código en ejecución, por lo que no es necesario realizar pruebas estáticas adicionales", "value": "F" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "SCA (Software Composition Analysis) identifica vulnerabilidades en componentes de terceros sin necesidad de ejecutar la aplicación, ayudando a garantizar la seguridad durante el desarrollo.",
-    "appearedInExam": false
-  },
-  {
-    "id": 19,
-    "text": "Una organización desarrolla un modelo de IA utilizando anonimizados en lugar de datos reales para proteger la privacidad de los usuarios. ¿Qué técnica está utilizando el equipo para cumplir con las regulaciones de privacidad?",
-    "options": [
-      { "text": "Derecho de corrección", "value": "A" },
-      { "text": "Uso de datos sintéticos", "value": "B" },
-      { "text": "Entrenamiento adversarial", "value": "C" },
-      { "text": "Plataforma de gestión de consentimiento", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "El uso de datos sintéticos o anonimizados protege la privacidad al reemplazar datos reales con datos generados que no identifican a usuarios, cumpliendo con regulaciones como GDPR.",
-    "appearedInExam": false
-  },
-  {
-    "id": 20,
-    "text": "Un equipo está utilizando una infraestructura de nube pública. ¿Qué estrategia debe seguir para gestionar la seguridad?",
-    "options": [
-      { "text": "Usar los servicios de seguridad predeterminados sin personalización", "value": "A" },
-      { "text": "Dejar la seguridad completamente a cargo del proveedor de la nube", "value": "B" },
-      { "text": "Implementar el modelo de responsabilidad compartida de seguridad", "value": "C" },
-      { "text": "Desactivar las políticas de seguridad predeterminadas", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "El modelo de responsabilidad compartida implica que el proveedor de la nube gestiona la seguridad de la infraestructura, mientras que el cliente configura y protege sus datos y aplicaciones.",
-    "appearedInExam": false
-  },
-  {
-    "id": 21,
-    "text": "Un equipo tiene problemas con la lentitud en la provisión de infraestructura debido a la intervención manual constante. ¿Qué solución puede adoptar?",
-    "options": [
-      { "text": "Continuar con la provisión manual, pero incrementando el personal", "value": "A" },
-      { "text": "Implementar infraestructura como código (IaC)", "value": "B" },
-      { "text": "Evitar realizar pruebas en la infraestructura", "value": "C" },
-      { "text": "Reemplazar todos los sistemas automáticos por procesos manuales", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "La infraestructura como código (IaC) automatiza la provisión de infraestructura, reduciendo la intervención manual y mejorando la eficiencia y consistencia.",
-    "appearedInExam": false
-  },
-  {
-    "id": 22,
-    "text": "¿Qué técnica debe emplearse para proteger los datos durante el tiempo que se almacenan, según OWASP?",
-    "options": [
-      { "text": "Pruebas de caja blanca", "value": "A" },
-      { "text": "Sistemas de monitoreo en tiempo real", "value": "B" },
-      { "text": "Pruebas adversariales", "value": "C" },
-      { "text": "Técnicas de cifrado robusto", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "OWASP recomienda el uso de técnicas de cifrado robusto para proteger los datos en reposo, asegurando que permanezcan seguros incluso si se accede a ellos sin autorización.",
-    "appearedInExam": false
-  },
-  {
-    "id": 23,
-    "text": "¿Qué herramienta o proceso ayuda a garantizar que los datos recolectados son esenciales para el propósito del modelo?",
-    "options": [
-      { "text": "Dashboards en tiempo real", "value": "A" },
-      { "text": "Pruebas de caja negra", "value": "B" },
-      { "text": "Auditorías periódicas", "value": "C" },
-      { "text": "Sistemas de cifrado robustos", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Las auditorías periódicas verifican que los datos recolectados sean necesarios y relevantes para el propósito del modelo, cumpliendo con principios como la minimización de datos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 24,
-    "text": "¿Qué desafío adicional enfrenta la seguridad de las aplicaciones en la nube?",
-    "options": [
-      { "text": "Los datos confidenciales son más vulnerables", "value": "A" },
-      { "text": "Las aplicaciones no transmiten datos sensibles", "value": "B" },
-      { "text": "La implementación de hardware especializado", "value": "C" },
-      { "text": "Las aplicaciones basadas en la nube no necesitan seguridad", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "En la nube, los datos confidenciales son más vulnerables debido a la exposición a entornos compartidos y la necesidad de configuraciones de seguridad robustas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 25,
-    "text": "Considerando el proceso de desarrollo de software, nos encontramos realizando la actividad del modelado de amenazas, en específico estamos modificando los requerimientos para establecerlos. Dado este contexto, ¿qué deberíamos hacer para prevenir identificar y prevenir posibles amenazas dentro de un requerimiento?",
-    "options": [
-      { "text": "Usar herramientas automatizadas para análisis de código estático", "value": "A" },
-      { "text": "Documentar y seguir las políticas de seguridad de la organización durante la ejecución del programa", "value": "B" },
-      { "text": "Capacitar a los usuarios finales sobre el uso del programa para el caso de uso a modelar", "value": "C" },
-      { "text": "Usar herramientas manuales para pruebas de código dinámico", "value": "D" },
-      { "text": "Realizar pruebas de penetración en el software después de su implementación", "value": "E" },
-      { "text": "Identificar límites de confianza (valores permitidos, rangos de valores, límites de intentos), puntos de entrada y salida de información en el caso de uso", "value": "F" }
-    ],
-    "correctAnswer": "F",
-    "explanation": "En el modelado de amenazas, identificar límites de confianza, puntos de entrada y salida de información ayuda a definir requisitos que previenen amenazas desde la fase de diseño.",
-    "appearedInExam": false
-  },
-  {
-    "id": 26,
-    "text": "Una empresa implementa un modelo de IA que no ha sido entrenado con datos precisos. ¿Qué riesgo principal enfrenta la empresa?",
-    "options": [
-      { "text": "El modelo será 100% confiable desde el inicio", "value": "A" },
-      { "text": "El modelo tomará decisiones basadas en patrones defectuosos, lo que podría generar errores", "value": "B" },
-      { "text": "El modelo será más seguro y eficiente", "value": "C" },
-      { "text": "El modelo se ajustará automáticamente a los datos erróneos sin afectar los resultados", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Un modelo de IA entrenado con datos imprecisos generará decisiones basadas en patrones defectuosos, lo que puede llevar a errores y resultados no confiables.",
-    "appearedInExam": false
-  },
-  {
-    "id": 27,
-    "text": "Un atacante inyecta malware en una aplicación móvil durante el desarrollo. Luego, el atacante firma la aplicación con un certificado válido y lo distribuye a la tienda de aplicaciones, evitando los controles de seguridad de la tienda. Los usuarios adquieren la aplicación, que roba sus credenciales y otros datos confidenciales. ¿Qué amenaza se describe en el ejemplo anterior?",
-    "options": [
-      { "text": "Validación de entrada/salida insuficiente", "value": "A" },
-      { "text": "Uso inadecuado de credenciales", "value": "B" },
-      { "text": "Controles de privacidad inadecuados", "value": "C" },
-      { "text": "Protecciones binarias insuficientes", "value": "D" },
-      { "text": "Comunicación insegura", "value": "E" },
-      { "text": "Seguridad inadecuada de la cadena de suministro", "value": "F" }
-    ],
-    "correctAnswer": "F",
-    "explanation": "La inyección de malware durante el desarrollo y su distribución a través de una tienda de aplicaciones representa una amenaza de seguridad inadecuada en la cadena de suministro.",
-    "appearedInExam": false
-  },
-  {
-    "id": 28,
-    "text": "¿Cuál es un enfoque para asegurar entradas de usuarios antes de procesarlas?",
-    "options": [
-      { "text": "Validación del lado del cliente", "value": "A" },
-      { "text": "Validación del lado del servidor", "value": "B" },
-      { "text": "Smart fuzzing", "value": "C" },
-      { "text": "Administración de sesiones", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "La validación del lado del servidor es más segura, ya que el cliente puede ser manipulado, mientras que el servidor asegura que las entradas cumplan con los criterios establecidos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 29,
-    "text": "¿Cómo se puede reducir la superficie de ataque de una API?",
-    "options": [
-      { "text": "Limitar el número de solicitudes a la API", "value": "A" },
-      { "text": "Exponer todas las funciones de la API", "value": "B" },
-      { "text": "Permitiendo todos los puntos de acceso sin restricciones", "value": "C" },
-      { "text": "Hacer uso de una sola clave de API para todo el sistema", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Limitar el número de solicitudes a la API (rate limiting) reduce la superficie de ataque al prevenir abusos como ataques DDoS y accesos no autorizados.",
-    "appearedInExam": false
-  },
-  {
-    "id": 30,
-    "text": "Con el fin de lograr prevenir cierto tipo de vulnerabilidad decide usar componentes de terceros descargados de fuentes oficiales identificando las versiones de los componentes y de sus dependencias, manteniéndolas actualizadas. ¿Esto logrará impedir que se materialice qué tipo de amenaza?",
-    "options": [
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
-      { "text": "Fallos de integridad de software y datos", "value": "B" },
-      { "text": "Componentes vulnerables y obsoletos", "value": "C" },
-      { "text": "Error de identificación y autenticación", "value": "D" },
-      { "text": "Errores de registro y supervisión de seguridad", "value": "E" },
-      { "text": "Configuración incorrecta de seguridad", "value": "F" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Mantener componentes de terceros actualizados desde fuentes oficiales previene la amenaza de componentes vulnerables y obsoletos, reduciendo riesgos de seguridad conocidos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 31,
-    "text": "¿Qué se busca prevenir con la implementación de técnicas de análisis anti dinámico en una aplicación?",
-    "options": [
-      { "text": "La corrupción de los datos almacenados en el dispositivo", "value": "A" },
-      { "text": "La modificación de la interfaz de usuario", "value": "B" },
-      { "text": "El análisis y la manipulación del código durante el tiempo de ejecución", "value": "C" },
-      { "text": "El acceso a la memoria de la aplicación", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Las técnicas de análisis anti dinámico buscan prevenir el análisis y manipulación del código en tiempo de ejecución, dificultando que atacantes realicen ingeniería inversa o exploten el software.",
-    "appearedInExam": false
-  },
-  {
-    "id": 32,
-    "text": "Un atacante realiza múltiples intentos de acceso a la API utilizando contraseñas comunes. ¿Qué vulnerabilidad está aprovechando?",
-    "options": [
-      { "text": "Autenticación", "value": "A" },
-      { "text": "Acceso no autorizado a flujos sensibles", "value": "B" },
-      { "text": "Consumo de recursos sin restricción", "value": "C" },
-      { "text": "Autorización de objeto rota", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "El uso de contraseñas comunes explotan vulnerabilidades en la autenticación, como la falta de políticas de contraseñas fuertes o límites en intentos de acceso.",
-    "appearedInExam": false
-  },
-  {
-    "id": 33,
-    "text": "Un desarrollador está a punto de realizar un cambio en un contenedor, ¿qué debe verificar primero?",
-    "options": [
-      { "text": "Si la imagen contiene vulnerabilidades conocidas", "value": "A" },
-      { "text": "Si la imagen base es confiable y actualizada", "value": "B" },
-      { "text": "Si el contenedor tiene configuraciones personalizadas", "value": "C" },
-      { "text": "Si las credenciales de API están incluidas en el código", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Verificar que la imagen base sea confiable y esté actualizada es crucial para evitar vulnerabilidades conocidas y garantizar la seguridad del contenedor.",
-    "appearedInExam": false
-  },
-  {
-    "id": 34,
-    "text": "¿Cómo se debe priorizar la implementación de controles de seguridad?",
-    "options": [
-      { "text": "Por la complejidad técnica", "value": "A" },
-      { "text": "Por el impacto en la confianza del cliente", "value": "B" },
-      { "text": "Por el nivel de riesgo de cada amenaza", "value": "C" },
-      { "text": "Según el coste de implementación", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Los controles de seguridad deben priorizarse según el nivel de riesgo de cada amenaza, enfocándose en mitigar primero las más críticas para el sistema.",
-    "appearedInExam": false
-  },
-  {
-    "id": 35,
-    "text": "Durante el proceso de desarrollo de software, el equipo está utilizando herramientas para gestionar las bibliotecas y componentes de terceros integrados en la aplicación. La principal preocupación es garantizar que no existan vulnerabilidades de seguridad ni problemas de licencias asociados con estas dependencias externas. ¿Cuál de las siguientes pruebas es la más adecuada para este propósito?",
-    "options": [
-      { "text": "Software Composition Analysis (SCA)", "value": "A" },
-      { "text": "Pruebas de aceptación del usuario", "value": "B" },
-      { "text": "Pruebas de regresión", "value": "C" },
-      { "text": "Pruebas de caja negra", "value": "D" },
-      { "text": "Pruebas de caja blanca", "value": "E" },
-      { "text": "Pruebas de integración", "value": "F" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "SCA se enfoca en analizar bibliotecas y dependencias de terceros para identificar vulnerabilidades de seguridad y problemas de licencias, siendo la herramienta más adecuada.",
-    "appearedInExam": false
-  },
-  {
-    "id": 36,
-    "text": "Los desarrolladores dejan sus API y recursos vulnerables a ataques si los atacantes pueden manipular a proveedores exteriores. ¿A qué categoría de amenaza hace referencia el enunciado anterior?",
-    "options": [
-      { "text": "Configuración incorrecta de seguridad", "value": "A" },
-      { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "B" },
-      { "text": "Consumo inseguro de API", "value": "C" },
-      { "text": "Autorización de nivel de función rota", "value": "D" },
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "E" },
-      { "text": "Autorización de nivel de propiedad de objeto roto", "value": "F" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "La respuesta proporcionada (E) es incorrecta. El consumo inseguro de API ocurre cuando los desarrolladores no validan adecuadamente los datos de proveedores externos, dejando las APIs vulnerables a manipulaciones.",
-    "appearedInExam": false
-  },
-  {
-    "id": 37,
-    "text": "¿Por qué es esencial que las aplicaciones se ejecuten en una versión actualizada de la plataforma?",
-    "options": [
-      { "text": "Para tener las protecciones de seguridad más recientes y evitar vulnerabilidades conocidas", "value": "A" },
-      { "text": "Para aprovechar las nuevas características de diseño", "value": "B" },
-      { "text": "Para mejorar la experiencia del usuario", "value": "C" },
-      { "text": "Para reducir el consumo de batería de la aplicación", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Ejecutar aplicaciones en plataformas actualizadas asegura que se apliquen los últimos parches de seguridad, protegiendo contra vulnerabilidades conocidas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 38,
-    "text": "Al hacer un análisis de las causas de una brecha de seguridad, podemos atribuir esta causa a la implementación o a la arquitectura de la aplicación. En ese sentido, ¿cómo se denomina a esta causa de provenir de la implementación diseño/arquitectura?",
-    "options": [
-      { "text": "Amenaza", "value": "A" },
-      { "text": "Ataque", "value": "B" },
-      { "text": "Vulnerabilidad", "value": "C" },
-      { "text": "Exploit", "value": "D" },
-      { "text": "Defecto", "value": "E" },
-      { "text": "Error", "value": "F" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Una vulnerabilidad es una debilidad en la implementación o arquitectura que puede ser explotada, causando una brecha de seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 39,
-    "text": "Los desarrolladores a menudo confían en los datos recibidos, especialmente cuando trabajan con proveedores de renombre e implementan políticas y estándares de seguridad menos estrictos. ¿A qué categoría de amenaza hace referencia el enunciado anterior?",
-    "options": [
-      { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "A" },
-      { "text": "Consumo inseguro de API", "value": "B" },
-      { "text": "Autorización de nivel de función rota", "value": "C" },
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "D" },
-      { "text": "Autorización de nivel de propiedades de objeto roto", "value": "E" },
-      { "text": "Configuración incorrecta de seguridad", "value": "F" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Confiar ciegamente en datos de proveedores sin validación adecuada representa un consumo inseguro de API, aumentando el riesgo de ataques.",
-    "appearedInExam": false
-  },
-  {
-    "id": 40,
-    "text": "Una organización que opera en la nube detecta un incremento de ataques dirigidos hacia su consola de gestión. ¿Qué medida debería implementar para proteger este recurso crítico?",
-    "options": [
-      { "text": "Utilizar claves SSH incrustadas para asegurar la consola", "value": "A" },
-      { "text": "Realizar pruebas de aplicaciones estadísticas (SAST)", "value": "B" },
-      { "text": "Automatizar los scripts de aprovisionamiento", "value": "C" },
-      { "text": "Controlar estrictamente el acceso con privilegios a la consola de gestión", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Controlar estrictamente el acceso con privilegios a la consola de gestión limita quién puede acceder, reduciendo el riesgo de ataques dirigidos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 41,
-    "text": "¿Por qué es importante aplicar actualizaciones a los componentes de software de terceros en una aplicación?",
-    "options": [
-      { "text": "Para mejorar la compatibilidad con otros dispositivos", "value": "A" },
-      { "text": "Para evitar el uso de componentes con vulnerabilidades conocidas", "value": "B" },
-      { "text": "Para reducir el tiempo de ejecución de la aplicación", "value": "C" },
-      { "text": "Para facilitar la depuración de los componentes del sistema", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Actualizar componentes de terceros evita vulnerabilidades conocidas, ya que las nuevas versiones suelen incluir parches de seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 42,
-    "text": "¿Qué tipo de vulnerabilidades se explotan en un ataque a una API?",
-    "options": [
-      { "text": "Vulnerabilidades solo en los servidores web", "value": "A" },
-      { "text": "Ataques de fuerza bruta únicamente", "value": "B" },
-      { "text": "Aprovechamientos de vulnerabilidades, como inyecciones de SQL y desconfiguración de la seguridad", "value": "C" },
-      { "text": "Vulnerabilidades conocidas como 'fallos de seguridad'", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Los ataques a APIs pueden explotar vulnerabilidades como inyecciones SQL y configuraciones de seguridad incorrectas, entre otras, para comprometer el sistema.",
-    "appearedInExam": false
-  },
-  {
-    "id": 43,
-    "text": "¿Qué requisito de seguridad protege contra la divulgación no autorizada de información sensible?",
-    "options": [
-      { "text": "Integridad", "value": "A" },
-      { "text": "Confidencialidad", "value": "B" },
-      { "text": "Transparencia", "value": "C" },
-      { "text": "Disponibilidad", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "La confidencialidad protege contra la divulgación no autorizada de información sensible, asegurando que solo las partes autorizadas puedan acceder a ella.",
-    "appearedInExam": false
-  },
-  {
-    "id": 44,
-    "text": "¿Cómo se llama el proceso que se enfoca en la seguridad después del proceso de desarrollo?",
-    "options": [
-      { "text": "Concientización", "value": "A" },
-      { "text": "DEVOPS", "value": "B" },
-      { "text": "SCRUM", "value": "C" },
-      { "text": "Automatización", "value": "D" },
-      { "text": "Desarrollo ágil", "value": "E" },
-      { "text": "Desplazar la seguridad a la derecha", "value": "F" }
-    ],
-    "correctAnswer": "F",
-    "explanation": "Desplazar la seguridad a la derecha (Shift Right) implica enfocarse en la seguridad post-desarrollo, como en producción, mediante monitoreo y respuesta a incidentes.",
-    "appearedInExam": false
-  },
-  {
-    "id": 45,
-    "text": "Una empresa necesita rastrear métricas clave como precisión y tasa de error en tiempo real. ¿Qué herramientas o práctica debería implementar?",
-    "options": [
-      { "text": "Desarrollar un dashboard de supervisión", "value": "A" },
-      { "text": "Entrenar el modelo con más datos", "value": "B" },
-      { "text": "Aplicar pruebas de caja negra", "value": "C" },
-      { "text": "Realizar pruebas adversariales periódicas", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Un dashboard de supervisión permite rastrear métricas clave como precisión y tasa de error en tiempo real, proporcionando visibilidad inmediata del rendimiento.",
-    "appearedInExam": false
-  },
-  {
-    "id": 46,
-    "text": "¿Qué aspecto permite que las aplicaciones web sean accesibles?",
-    "options": [
-      { "text": "Son exclusivas para usuarios con conocimientos avanzados", "value": "A" },
-      { "text": "Su diseño incluye acceso remoto", "value": "B" },
-      { "text": "Utilizan dispositivos de entrada avanzados", "value": "C" },
-      { "text": "Requieren instalación local", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "El diseño de aplicaciones web con acceso remoto permite que sean accesibles desde cualquier lugar a través de un navegador, sin necesidad de instalación local.",
-    "appearedInExam": false
-  },
-  {
-    "id": 47,
-    "text": "¿Cuál es el proceso de evaluar los controles de seguridad de la información e implementar los procesos y herramientas adecuados en los sistemas de TI para proteger los datos utilizados y almacenados?",
-    "options": [
-      { "text": "Análisis post mortem", "value": "A" },
-      { "text": "Diseño de calidad", "value": "B" },
-      { "text": "Modelado de amenazas", "value": "C" },
-      { "text": "Prioridad de las amenazas", "value": "D" },
-      { "text": "Control de Seguridad", "value": "E" },
-      { "text": "Arquitectura de seguridad", "value": "F" }
-    ],
-    "correctAnswer": "F",
-    "explanation": "La arquitectura de seguridad implica evaluar y diseñar controles para proteger datos, implementando herramientas y procesos adecuados en los sistemas de TI.",
-    "appearedInExam": false
-  },
-  {
-    "id": 48,
-    "text": "¿Cuál de los siguientes es un ejemplo de una mala práctica en gestión de claves criptográficas?",
-    "options": [
-      { "text": "Destruir las claves de forma correcta", "value": "A" },
-      { "text": "Utilizar claves largas y seguras", "value": "B" },
-      { "text": "Almacenar la clave criptográfica junto con los datos en una cinta de respaldo", "value": "C" },
-      { "text": "Realizar rotaciones frecuentes de claves", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Almacenar claves criptográficas junto con los datos en una cinta de respaldo es una mala práctica, ya que compromete la seguridad de los datos si la clave es accedida.",
-    "appearedInExam": false
-  },
-  {
-    "id": 49,
-    "text": "En un equipo DevOps, se está implementando un modelo de trabajo ágil. ¿Cómo se puede asegurar que el software esté siempre listo para ser desplegado?",
-    "options": [
-      { "text": "Usar sólo pruebas manuales de integración", "value": "A" },
-      { "text": "Implementar Continuous Integration (CI)", "value": "B" },
-      { "text": "Solo implementar código cuando todo esté terminado", "value": "C" },
-      { "text": "Reducir las pruebas automatizadas", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "La integración continua (CI) asegura que el software esté listo para desplegarse mediante la automatización de pruebas y compilaciones frecuentes.",
-    "appearedInExam": false
-  },
-  {
-    "id": 50,
-    "text": "Un equipo recibe alertas de seguridad sobre un contenedor. ¿Qué debería hacer primero para mitigar el riesgo?",
-    "options": [
-      { "text": "Deshabilitar la red para prevenir accesos no autorizados", "value": "A" },
-      { "text": "Actualizar todos los contenedores sin pruebas", "value": "B" },
-      { "text": "Rastrear y verificar las vulnerabilidades identificadas", "value": "C" },
-      { "text": "Ignorar las alertas si el contenedor parece funcionar bien", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Rastrear y verificar las vulnerabilidades identificadas permite al equipo entender el riesgo y tomar medidas específicas para mitigarlo sin interrumpir innecesariamente el sistema.",
-    "appearedInExam": false
-  },
-  {
-    "id": 51,
-    "text": "¿Qué tipo de vulnerabilidad permite que el atacante pueda acceder, modificar, agregar y eliminar valores de propiedad a los objetos?",
-    "options": [
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
-      { "text": "Consumo de recursos sin restricciones", "value": "B" },
-      { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "C" },
-      { "text": "Configuración incorrecta de seguridad", "value": "D" },
-      { "text": "Autorización de nivel de propiedad de objeto roto", "value": "E" },
-      { "text": "Gestión inadecuada del inventario", "value": "F" }
-    ],
-    "correctAnswer": "E",
-    "explanation": "La autorización de nivel de propiedad de objeto roto permite a un atacante manipular objetos sin las restricciones adecuadas, accediendo o modificando datos no autorizados.",
-    "appearedInExam": false
-  },
-  {
-    "id": 52,
-    "text": "¿Qué tipo de análisis busca la vulnerabilidad en código fuente?",
-    "options": [
-      { "text": "Revisión de pares", "value": "A" },
-      { "text": "Escaneo dinámico", "value": "B" },
-      { "text": "Escaneo estático", "value": "C" },
-      { "text": "Análisis de diccionario", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "El escaneo estático (SAST) analiza el código fuente sin ejecutarlo, identificando vulnerabilidades como inyecciones o errores de codificación.",
-    "appearedInExam": false
-  },
-  {
-    "id": 53,
-    "text": "¿Cómo se puede mitigar el consumo no restringido de recursos?",
-    "options": [
-      { "text": "Implementación límites y cuotas de uso", "value": "A" },
-      { "text": "Permitiendo acceso ilimitado", "value": "B" },
-      { "text": "Eliminado todas las peticiones de los usuarios", "value": "C" },
-      { "text": "No limitando la velocidad de acceso", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Implementar límites y cuotas de uso (rate limiting) mitiga el consumo no restringido de recursos, previniendo abusos como ataques DDoS.",
-    "appearedInExam": false
-  },
-  {
-    "id": 54,
-    "text": "Una aplicación está configurada de tal manera que un usuario de forma convencional tiene los permisos mínimos para realizar sus actividades diarias, de ser necesario, el usuario puede asumir permisos más elevados durante un periodo. ¿Qué características hacen referencia al enunciado anterior?",
-    "options": [
-      { "text": "JIT", "value": "A" },
-      { "text": "Atomicidad", "value": "B" },
-      { "text": "JEA", "value": "C" },
-      { "text": "Integridad", "value": "D" },
-      { "text": "Disponibilidad", "value": "E" },
-      { "text": "No repudio", "value": "F" }
-    ],
-    "correctAnswer": "A, C",
-    "explanation": "JIT (Just-In-Time) y JEA (Just Enough Administration) permiten a los usuarios obtener permisos elevados temporalmente, siguiendo el principio de privilegio mínimo.",
-    "appearedInExam": false
-  },
-  {
-    "id": 55,
-    "text": "Un atacante obtiene acceso físico al dispositivo de un usuario y extrae las credenciales almacenadas de la aplicación. El atacante utiliza las mismas para obtener acceso no autorizado a la cuenta del usuario. ¿Qué amenaza se describe en el ejemplo anterior?",
-    "options": [
-      { "text": "Validación de entrada/salida insuficiente", "value": "A" },
-      { "text": "Uso inadecuado de credenciales", "value": "B" },
-      { "text": "Comunicación insegura", "value": "C" },
-      { "text": "Controles de privacidad inadecuados", "value": "D" },
-      { "text": "Protecciones binarias insuficientes", "value": "E" },
-      { "text": "Seguridad inadecuada de la cadena de suministro", "value": "F" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "El uso inadecuado de credenciales ocurre cuando estas se almacenan de manera insegura, permitiendo a un atacante con acceso físico extraerlas y usarlas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 56,
-    "text": "Una de las técnicas que utilizan lenguajes de programación más nuevos en comparación con lenguajes más viejos es la gestión automática de memoria. Permitiendo de esta manera prevenir ataques que sobrecarguen la memoria con objetos que ya son inalcanzables en el programa. ¿Lo anterior podría ayudar a prevenir ataques de denegación de servicio?",
-    "options": [
-      { "text": "Verdadero", "value": "A" },
-      { "text": "Falso", "value": "B" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "La gestión automática de memoria, como el recolector de basura, puede prevenir ataques de denegación de servicio al evitar desbordamientos de memoria causados por objetos inalcanzables.",
-    "appearedInExam": false
-  },
-  {
-    "id": 57,
-    "text": "Los abogados de una empresa están preocupados por los aspectos legales relacionados con el uso de software, ya que existen distintos tipos de licencias, como GNU/GPL, Apache, entre otras. Les inquieta que, debido a la naturaleza del desarrollo, algunos de los componentes utilizados puedan estar regulados y, por ello, le solicitan identificar todas las librerías y dependencias empleadas para corroborar que no se esté haciendo un uso indebido de dichos componentes. ¿Qué tipo de prueba le puede ayudar en esta tarea?",
-    "options": [
-      { "text": "SCA", "value": "A" },
-      { "text": "DAST", "value": "B" },
-      { "text": "Integración", "value": "C" },
-      { "text": "Unitarias", "value": "D" },
-      { "text": "Carga", "value": "E" },
-      { "text": "SAST", "value": "F" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "SCA (Software Composition Analysis) identifica bibliotecas y dependencias, verificando licencias y vulnerabilidades para asegurar el cumplimiento legal y de seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 58,
-    "text": "Una aplicación de reconocimiento facial recopila datos de los rostros de un usuario para autenticar accesos. Posteriormente, esta información se usa para crear perfiles demográficos sin consentimiento previo. ¿Qué principio se está ignorando?",
-    "options": [
-      { "text": "La seguridad en el almacenamiento de datos personales", "value": "A" },
-      { "text": "La especificación de finalidad y consentimiento informado", "value": "B" },
-      { "text": "La auditoría de los datos recopilados", "value": "C" },
-      { "text": "El uso de aprendizaje federado para proteger la privacidad", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "El principio de especificación de finalidad y consentimiento informado requiere que los datos se usen solo para los fines consentidos por el usuario, lo cual se ignora al crear perfiles sin permiso.",
-    "appearedInExam": false
-  },
-  {
-    "id": 59,
-    "text": "Un equipo de desarrollo de la IA actualiza las políticas de privacidad de su aplicación y comienza a usar los datos de los usuarios para un propósito. ¿Qué deben hacer para cumplir con las regulaciones de privacidad?",
-    "options": [
-      { "text": "Anonimizar los datos sin necesidad de notificación", "value": "A" },
-      { "text": "Continuar usando los datos bajo el consentimiento previo", "value": "B" },
-      { "text": "Modificar el consentimiento de manera automática", "value": "C" },
-      { "text": "Notificar a los usuarios y solicitarles que confirmen nuevamente su conocimiento", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Cambios en el uso de datos requieren notificar a los usuarios y obtener un nuevo consentimiento, conforme a regulaciones como GDPR, para garantizar transparencia.",
-    "appearedInExam": false
-  },
-  {
-    "id": 60,
-    "text": "Deshabilitar características, servicios o módulos innecesarios para la funcionalidad de la API. ¿Los anteriores son ejemplos de soluciones ante qué tipo de amenaza?",
-    "options": [
-      { "text": "Gestión inadecuada del inventario", "value": "A" },
-      { "text": "Autorización de nivel de función rota", "value": "B" },
-      { "text": "Configuración incorrecta de seguridad", "value": "C" },
-      { "text": "Autorización de nivel de propiedad de objeto roto", "value": "D" },
-      { "text": "Acceso sin restricciones a flujos comerciales", "value": "E" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Deshabilitar características innecesarias mitiga la configuración incorrecta de seguridad al reducir la superficie de ataque y limitar funciones expuestas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 61,
-    "text": "¿Cuál de los siguientes es un manual completo que cubre los procesos, técnicas y herramientas utilizadas durante el análisis de seguridad de aplicaciones móviles, así como conjunto exhaustivo de casos de prueba para verificar los requisitos enumerados en el estándar de verificación de seguridad de aplicaciones móviles de OWASP (MASVS)?",
-    "options": [
-      { "text": "OWASP Mobile Top 10", "value": "A" },
-      { "text": "PCI DSS", "value": "B" },
-      { "text": "MASVS", "value": "C" },
-      { "text": "OWASP Top 10", "value": "D" },
-      { "text": "MASTG", "value": "E" },
-      { "text": "MITRE SHIELD", "value": "F" }
-    ],
-    "correctAnswer": "E",
-    "explanation": "MASTG (Mobile Application Security Testing Guide) es el manual completo de OWASP que cubre análisis de seguridad y casos de prueba para cumplir con MASVS.",
-    "appearedInExam": false
-  },
-  {
-    "id": 62,
-    "text": "¿Cuál es la tarea que se lleva a cabo en la fase de diseño del SDLC para abordar la seguridad?",
-    "options": [
-      { "text": "Aplicar pruebas dinámicas", "value": "A" },
-      { "text": "Desarrollar pruebas de verificación", "value": "B" },
-      { "text": "Implementar estándares de codificación segura", "value": "C" },
-      { "text": "Crear el modelo de amenazas", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "En la fase de diseño del SDLC, crear el modelo de amenazas identifica riesgos y define requisitos de seguridad para mitigarlos desde el inicio.",
-    "appearedInExam": false
-  },
-  {
-    "id": 63,
-    "text": "¿Cuál de las siguientes afirmaciones sobre SAST y SCA es correcta?",
-    "options": [
-      { "text": "SAST permite detectar vulnerabilidades de seguridad en el código fuente sin necesidad de ejecutar la aplicación", "value": "A" },
-      { "text": "SCA es una técnica que evalúa el rendimiento y la seguridad de una aplicación al ejecutarla", "value": "B" },
-      { "text": "SCA se enfoca principalmente en la calidad del código y no abarca la seguridad en la aplicación", "value": "C" },
-      { "text": "SCA solo identifica problemas de seguridad y no aborda otros defectos en el código", "value": "D" },
-      { "text": "SAST y SCA son lo mismo, ambos se centran únicamente en la calidad del código", "value": "E" },
-      { "text": "SAST se utiliza exclusivamente para analizar el rendimiento de una aplicación, sin considerar su seguridad", "value": "F" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "SAST (Static Application Security Testing) analiza el código fuente sin ejecutarlo, detectando vulnerabilidades de seguridad, mientras que SCA se centra en componentes de terceros.",
-    "appearedInExam": false
-  },
-  {
-    "id": 64,
-    "text": "Considerando una aplicación con una validación de entrada pobre (Se omiten sustituir valores, eliminar caracteres especiales o no se literaliza la entrada), ¿qué tipo de amenazas podrían presentarse?",
-    "options": [
-      { "text": "Robo de sesión", "value": "A" },
-      { "text": "Inyección SQL", "value": "B" },
-      { "text": "Fuerza bruta", "value": "C" },
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "D" },
-      { "text": "Mensajes de error detallados", "value": "E" },
-      { "text": "XSS", "value": "F" }
-    ],
-    "correctAnswer": "B, F",
-    "explanation": "Una validación de entrada pobre puede permitir inyecciones SQL y ataques XSS, ya que los datos no sanitizados pueden ser interpretados como código o consultas maliciosas.",
-    "appearedInExam": false
-  },
-  {
-    "id": 65,
-    "text": "¿Qué control garantiza que cualquier dato confidencial almacenado intencionalmente por la aplicación esté protegido adecuadamente, independientemente de la ubicación de destino?",
-    "options": [
-      { "text": "MASVS-RESILIENCE", "value": "A" },
-      { "text": "MASVS-CRYPTO", "value": "B" },
-      { "text": "MASVS-AUTH", "value": "C" },
-      { "text": "MASVS-NETWORK", "value": "D" },
-      { "text": "MASVS-DEVOPS", "value": "E" },
-      { "text": "MASVS-STORAGE", "value": "F" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "MASVS-CRYPTO asegura que los datos confidenciales almacenados estén protegidos mediante técnicas de cifrado robustas, independientemente de su ubicación.",
-    "appearedInExam": false
-  },
-  {
-    "id": 66,
-    "text": "Un automóvil autónomo comienza a tomar decisiones erróneas debido a pequeños cambios en las señales de tráfico que no son detectables para los humanos. Estas alteraciones hacen que el modelo de IA interprete incorrectamente las señales. ¿Qué tipo de ataque está afectando al modelo del vehículo autónomo?",
-    "options": [
-      { "text": "Inyección de código", "value": "A" },
-      { "text": "Envenenamiento de datos", "value": "B" },
-      { "text": "Filtración de información", "value": "C" },
-      { "text": "Ataque adversarial", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Un ataque adversarial altera sutilmente las entradas (como señales de tráfico) para engañar al modelo de IA, causando decisiones erróneas sin ser detectado por humanos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 67,
-    "text": "Un equipo de DevOps detecta una vulnerabilidad en su aplicación mientras está en producción. ¿Qué herramienta debe utilizar para abordar el problema de forma rápida?",
-    "options": [
-      { "text": "Herramientas de pruebas dinámicas de seguridad de aplicaciones (DAST)", "value": "A" },
-      { "text": "Realizar pruebas solo en el entorno de desarrollo", "value": "B" },
-      { "text": "Dejar que el problema sea solucionado en una próxima actualización", "value": "C" },
-      { "text": "Ignorar las vulnerabilidades en producción", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "DAST (Dynamic Application Security Testing) analiza aplicaciones en producción, identificando vulnerabilidades rápidamente sin necesidad de acceder al código fuente.",
-    "appearedInExam": false
-  },
-  {
-    "id": 68,
-    "text": "Un usuario obtiene acceso a funcionalidades del sistema móvil sin tener permiso adecuado. ¿Qué vulnerabilidad está presente?",
-    "options": [
-      { "text": "Autenticación/autorización insegura", "value": "A" },
-      { "text": "Criptografía insuficiente", "value": "B" },
-      { "text": "Protección binaria insuficiente", "value": "C" },
-      { "text": "Almacenamiento inseguro de datos", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "La autenticación/autorización insegura permite a usuarios acceder a funcionalidades sin los permisos adecuados, debido a fallos en los controles de acceso.",
-    "appearedInExam": false
-  },
-  {
-    "id": 69,
-    "text": "Considerando la importancia del manejo de memoria, existe una condición que ocurre cuando los datos que se copian en el buffer son más grandes de lo que el buffer puede manejar. ¿Esto puede considerarse como qué tipo de amenaza?",
-    "options": [
-      { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
-      { "text": "Inyección", "value": "B" },
-      { "text": "Buffer Overflow", "value": "C" },
-      { "text": "Keylogger", "value": "D" },
-      { "text": "Denegación de servicio", "value": "E" },
-      { "text": "XSS", "value": "F" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Un buffer overflow ocurre cuando se escriben más datos en un buffer de los que puede manejar, pudiendo causar fallos o permitir la ejecución de código malicioso.",
-    "appearedInExam": false
-  },
-  {
-    "id": 70,
-    "text": "¿Qué se debe hacer para proteger las APIs de posibles ataques DDoS?",
-    "options": [
-      { "text": "No permitir ningún tipo de autenticación", "value": "A" },
-      { "text": "Evitar el uso de encriptación TLS", "value": "B" },
-      { "text": "Configurar una API Gateway con limitación de velocidad", "value": "C" },
-      { "text": "Permitir solicitudes ilimitadas a la API", "value": "D" }
-    ],
-    "correctAnswer": "C",
-    "explanation": "Configurar una API Gateway con limitación de velocidad (rate limiting) protege contra ataques DDoS al restringir el número de solicitudes por usuario o tiempo.",
-    "appearedInExam": false
-  },
-  {
-    "id": 71,
-    "text": "Considerando una aplicación con una arquitectura cliente-servidor, la lógica del negocio debería manejarse principalmente en el lado del servidor, esto con el fin de lograr una de las siguientes opciones. ¿Cuál es el principio que estamos cumpliendo?",
-    "options": [
-      { "text": "Fallo seguro", "value": "A" },
-      { "text": "Diseño abierto", "value": "B" },
-      { "text": "Economía de mecanismos", "value": "C" },
-      { "text": "Menos privilegio", "value": "D" },
-      { "text": "Mínima exposición", "value": "E" },
-      { "text": "Aceptabilidad psicológica", "value": "F" }
-    ],
-    "correctAnswer": "E",
-    "explanation": "Manejar la lógica del negocio en el servidor cumple con el principio de mínima exposición, reduciendo la superficie de ataque al limitar lo que el cliente puede manipular.",
-    "appearedInExam": false
-  },
-  {
-    "id": 72,
-    "text": "Un equipo tiene un problema con la actualización de imágenes de contenedor. ¿Qué debería hacer para garantizar la seguridad?",
-    "options": [
-      { "text": "Utilizar imágenes sin ningún tipo de validación", "value": "A" },
-      { "text": "Asegurarse de que capas de runtime y sistema operativo estén actualizadas", "value": "B" },
-      { "text": "Mantener las imágenes antiguas para evitar cambios", "value": "C" },
-      { "text": "Descargar imágenes de fuentes no verificadas para acelerar el proceso", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Asegurarse de que las capas de runtime y el sistema operativo estén actualizadas garantiza que el contenedor no contenga vulnerabilidades conocidas, mejorando la seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 73,
-    "text": "¿Por qué es importante aplicar actualizaciones a los componentes de software de terceros en una aplicación?",
-    "options": [
-      { "text": "Para facilitar la depuración de los componentes del sistema", "value": "A" },
-      { "text": "Para reducir el tiempo de ejecución de la aplicación", "value": "B" },
-      { "text": "Para mejorar la compatibilidad con otros dispositivos", "value": "C" },
-      { "text": "Para evitar el uso de componentes con vulnerabilidades conocidas", "value": "D" }
-    ],
-    "correctAnswer": "D",
-    "explanation": "Actualizar componentes de terceros evita vulnerabilidades conocidas, ya que las nuevas versiones incluyen parches de seguridad para proteger la aplicación.",
-    "appearedInExam": false
-  },
-  {
-    "id": 74,
-    "text": "Demasiadas peticiones dirigidas a una API pueden ralentizar o detener el servicio para otros clientes. ¿A qué tipo de amenazas estamos hablando?",
-    "options": [
-      { "text": "Aprovechamientos de vulnerabilidades", "value": "A" },
-      { "text": "DoS", "value": "B" },
-      { "text": "Ataques basados en la autenticación", "value": "C" },
-      { "text": "DDoS", "value": "D" },
-      { "text": "Errores de autorización", "value": "E" }
-    ],
-    "correctAnswer": "B, D",
-    "explanation": "Tanto DoS (Denial of Service) como DDoS (Distributed Denial of Service) implican inundar una API con solicitudes para ralentizar o detener el servicio, afectando a otros clientes.",
-    "appearedInExam": false
-  },
-  {
-    "id": 75,
-    "text": "¿Cuál es el objetivo principal de los ciberataques?",
-    "options": [
-      { "text": "Obtener información confidencial", "value": "A" },
-      { "text": "Obtener datos, dinero o destruir la reputación", "value": "B" },
-      { "text": "Robar hardware de la empresa", "value": "C" },
-      { "text": "Destruir la infraestructura", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Los ciberataques buscan principalmente obtener datos, dinero o dañar la reputación de la víctima, abarcando una amplia gama de objetivos maliciosos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 76,
-    "text": "¿Qué técnica ayuda a transformar datos peligrosos en una forma inocua?",
-    "options": [
-      { "text": "Validación de entradas", "value": "A" },
-      { "text": "Sanitización de entradas", "value": "B" },
-      { "text": "Autenticación", "value": "C" },
-      { "text": "Autorización", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "La sanitización de entradas transforma datos potencialmente peligrosos en una forma segura, eliminando o neutralizando contenido malicioso antes de procesarlo.",
-    "appearedInExam": false
-  },
-  {
-    "id": 77,
-    "text": "¿Cuál es el propósito de la validación de la integridad de la plataforma en MASVS-RESILIENCIA?",
-    "options": [
-      { "text": "Asegurar que los datos de los usuarios sean almacenados correctamente", "value": "A" },
-      { "text": "Garantizar que la plataforma no ha sido manipulada para deshabilitar funciones de seguridad", "value": "B" },
-      { "text": "Mejorar la interfaz de usuario de la aplicación", "value": "C" },
-      { "text": "Permitir actualizaciones del sistema operativo", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "MASVS-RESILIENCE valida la integridad de la plataforma para asegurar que no ha sido manipulada, previniendo la desactivación de funciones de seguridad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 78,
-    "text": "¿Qué implica la transparencia en los modelos de IA según OWASP?",
-    "options": [
-      { "text": "La habilidad de explicar cómo y por qué toma decisiones", "value": "A" },
-      { "text": "La garantía de que el modelo es ético", "value": "B" },
-      { "text": "La capacitación de mejorar la precisión del modelo", "value": "C" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "La transparencia en modelos de IA, según OWASP, implica explicar cómo y por qué el modelo toma decisiones, promoviendo confianza y responsabilidad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 79,
-    "text": "¿Qué tipo de interfaz podría incluirse en los sistemas de IA para permitir a los usuarios gestionar su consentimiento y eliminación de datos?",
-    "options": [
-      { "text": "Interfaz para solicitudes de eliminación de datos", "value": "A" },
-      { "text": "Interfaz para analizar el uso de datos", "value": "B" },
-      { "text": "Interfaz para reportar vulnerabilidades", "value": "C" },
-      { "text": "Interfaz para revisión de seguridad", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Una interfaz para solicitudes de eliminación de datos permite a los usuarios gestionar su consentimiento y solicitar la eliminación de sus datos, cumpliendo con regulaciones de privacidad.",
-    "appearedInExam": false
-  },
-  {
-    "id": 80,
-    "text": "Una organización descubre que varios de sus artefactos de compilación obsoletos están ocupando espacio en su repositorio de CI. ¿Qué medida debería tomar para gestionar eficientemente estos artefactos?",
-    "options": [
-      { "text": "Implementar pruebas DAST durante el ciclo de vida de los artefactos", "value": "A" },
-      { "text": "Especificar las condiciones para eliminar artefactos en función del tiempo o espacio disponible", "value": "B" },
-      { "text": "Automatizar los scripts de aprovisionamiento de infraestructura", "value": "C" },
-      { "text": "Migrar todos los artefactos a un repositorio público", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Especificar condiciones para eliminar artefactos obsoletos basadas en tiempo o espacio optimiza el almacenamiento y gestión del repositorio de CI.",
-    "appearedInExam": false
-  },
-{
-    "id": 81,
-    "text": "¿Qué tipo de interfaz podría incluirse en los sistemas de IA para permitir a los usuarios gestionar su consentimiento y eliminación de datos?",
-    "options": [
-      { "text": "Interfaz para solicitudes de eliminación de datos", "value": "A" },
-      { "text": "Interfaz para analizar el uso de datos", "value": "B" },
-      { "text": "Interfaz para reportar vulnerabilidades", "value": "C" },
-      { "text": "Interfaz para revisión de seguridad", "value": "D" }
-    ],
-    "correctAnswer": "A",
-    "explanation": "Una interfaz para solicitudes de eliminación de datos permite a los usuarios gestionar su consentimiento y solicitar la eliminación de sus datos, cumpliendo con regulaciones de privacidad como GDPR.",
-    "appearedInExam": false
-  },
-  {
-    "id": 82,
-    "text": "Una organización descubre que varios de sus artefactos de compilación obsoletos están ocupando espacio en su repositorio de CI. ¿Qué medida debería tomar para gestionar eficientemente estos artefactos?",
-    "options": [
-      { "text": "Implementar pruebas DAST durante el ciclo de vida de los artefactos", "value": "A" },
-      { "text": "Especificar las condiciones para eliminar artefactos en función del tiempo o espacio disponible", "value": "B" },
-      { "text": "Automatizar los scripts de aprovisionamiento de infraestructura", "value": "C" },
-      { "text": "Migrar todos los artefactos a un repositorio público", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "Especificar condiciones para eliminar artefactos obsoletos basadas en tiempo o espacio optimiza el almacenamiento y gestión del repositorio de CI, reduciendo el desperdicio de recursos.",
-    "appearedInExam": false
-  },
-  {
-    "id": 83,
-    "text": "Un equipo de DevOps necesita identificar vulnerabilidades asociadas con la autenticación de usuarios y la inyección SQL en su aplicación. ¿Qué herramientas debería usar en el pipeline?",
-    "options": [
-      { "text": "Consolas de gestión de la nube", "value": "A" },
-      { "text": "Herramientas de prueba dinámica de aplicación (DAST)", "value": "B" },
-      { "text": "Plataformas de administración de artefactos", "value": "C" },
-      { "text": "Herramientas de prueba estática de aplicaciones (SAST)", "value": "D" }
-    ],
-    "correctAnswer": "B, D",
-    "explanation": "DAST (Dynamic Application Security Testing) analiza aplicaciones en ejecución para detectar vulnerabilidades como problemas de autenticación, mientras que SAST (Static Application Security Testing) examina el código fuente para identificar fallos como inyecciones SQL.",
-    "appearedInExam": false
-  },
-  {
-    "id": 84,
-    "text": "¿Qué desafío adicional enfrenta la seguridad de las aplicaciones en la nube?",
-    "options": [
-      { "text": "Las aplicaciones no transmiten datos sensibles", "value": "A" },
-      { "text": "Los datos confidenciales son más vulnerables", "value": "B" },
-      { "text": "La implementación de hardware especializado", "value": "C" },
-      { "text": "Las aplicaciones basadas en la nube no necesitan seguridad", "value": "D" }
-    ],
-    "correctAnswer": "B",
-    "explanation": "En la nube, los datos confidenciales son más vulnerables debido a entornos compartidos, configuraciones incorrectas y la necesidad de robustos controles de seguridad.",
-    "appearedInExam": false
-  }
+        "id": 1,
+        "text": "Con el fin de lograr prevenir la amenaza del tipo de errores criptográficos, decide almacenar la clave criptográfica junto con los datos que se están respaldando. ¿Esto logrará impedir que se materialice la amenaza?",
+        "options": [
+          { "text": "Verdadero", "value": "A" },
+          { "text": "Falso", "value": "B" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Almacenar la clave criptográfica junto con los datos respaldados no previene errores criptográficos, ya que compromete la seguridad de la clave al hacerla accesible junto con los datos, aumentando el riesgo de exposición.",
+        "appearedInExam": false
+      },
+      {
+        "id": 2,
+        "text": "Una tienda de alimentos quiere que los usuarios puedan escanear códigos de barras con la cámara del teléfono. ¿Qué tipo de desarrollo sería más adecuado?",
+        "options": [
+          { "text": "Aplicación web simple", "value": "A" },
+          { "text": "Basado en la nube", "value": "B" },
+          { "text": "Nativo", "value": "C" },
+          { "text": "Híbrido", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Una aplicación nativa es más adecuada porque permite un acceso directo y eficiente a la cámara del dispositivo, ofreciendo mejor rendimiento y experiencia de usuario para escanear códigos de barras.",
+        "appearedInExam": false
+      },
+      {
+        "id": 3,
+        "text": "Una aplicación LAMP ha personalizado las pantallas de error predeterminadas y gestiona los errores de manera correcta, de tal forma que no revela ningún detalle de la aplicación y solo devuelve al usuario lo mínimo que necesita saber. De acuerdo a esto, ¿qué requerimiento de seguridad se está cumpliendo?",
+        "options": [
+          { "text": "Requerimiento de seguimiento", "value": "A" },
+          { "text": "Compartir bibliotecas con otros desarrolladores", "value": "B" },
+          { "text": "Usar una sola biblioteca", "value": "C" },
+          { "text": "No usar bibliotecas externas", "value": "D" }
+        ],
+        "correctAnswer": ["None"],
+        "explanation": "La práctica descrita cumple con el principio de confidencialidad y minimización de exposición, pero ninguna opción lo refleja directamente.",
+        "appearedInExam": false
+      },
+      {
+        "id": 4,
+        "text": "¿Qué acción puede prevenir vulnerabilidades al trabajar con bibliotecas de terceros?",
+        "options": [
+          { "text": "Mantener las bibliotecas actualizadas", "value": "A" },
+          { "text": "Compartir bibliotecas con otros desarrolladores", "value": "B" },
+          { "text": "Usar una sola biblioteca", "value": "C" },
+          { "text": "No usar bibliotecas externas", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Mantener las bibliotecas de terceros actualizadas reduce el riesgo de vulnerabilidades conocidas, ya que las actualizaciones suelen incluir parches de seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 5,
+        "text": "¿Cuál es la característica fundamental que deben tener los ciclos de vida de desarrollo de software seguros (S-SDLC)?",
+        "options": [
+          { "text": "Confidencialidad, integridad y disponibilidad", "value": "A" },
+          { "text": "Simplificación de todas las fases del proyecto", "value": "B" },
+          { "text": "Alto nivel de complejidad", "value": "C" },
+          { "text": "Eliminar todas las vulnerabilidades", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "El S-SDLC se centra en garantizar confidencialidad, integridad y disponibilidad, integrando prácticas de seguridad en todas las fases del desarrollo para proteger los datos y sistemas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 7,
+        "text": "Durante el proceso de desarrollo de un modelo de IA para diagnóstico médico, los desarrolladores implementan un mecanismo que permite identificar y eliminar datos maliciosos antes de que sean utilizados para entrenar el modelo. ¿Qué medida están tomando los desarrolladores?",
+        "options": [
+          { "text": "Defensa adversarial", "value": "A" },
+          { "text": "Monitoreo de comportamiento", "value": "B" },
+          { "text": "Pruebas de caja negra", "value": "C" },
+          { "text": "Verificación y limpieza de datos", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "La verificación y limpieza de datos implica identificar y eliminar datos maliciosos o erróneos antes de usarlos en el entrenamiento, asegurando la calidad y seguridad del modelo de IA.",
+        "appearedInExam": false
+      },
+      {
+        "id": 8,
+        "text": "Cuando trabajamos con lenguajes de programación, C# de .Net puede ser considerado un lenguaje:",
+        "options": [
+          { "text": "Interpretado", "value": "A" },
+          { "text": "Híbrido", "value": "B" },
+          { "text": "Ensamblador", "value": "C" },
+          { "text": "Compilado", "value": "E" },
+          { "text": "Alto nivel", "value": "F" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "C# es un lenguaje híbrido, ya que se compila a código intermedio (IL) y se ejecuta en un entorno gestionado por CLR, combinando características de lenguajes compilados e interpretados.",
+        "appearedInExam": false
+      },
+      {
+        "id": 10,
+        "text": "¿Qué significa el término MTD en el contexto de disponibilidad?",
+        "options": [
+          { "text": "Máximo duración del tiempo operativo", "value": "A" },
+          { "text": "Tiempo máximo tolerable de inactividad", "value": "B" },
+          { "text": "Tiempo permitido para reiniciar el servidor", "value": "C" },
+          { "text": "Tiempo para recuperar operaciones", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "MTD (Maximum Tolerable Downtime) se refiere al tiempo máximo que un sistema puede estar inactivo sin causar impactos significativos en las operaciones.",
+        "appearedInExam": false
+      },
+      {
+        "id": 11,
+        "text": "Los parámetros de consulta de URL se utilizan a menudo para transmitir argumentos de solicitud a un servidor; sin embargo, son visibles al menos en los registros del servidor, y a menudo también en el análisis del sitio web y posiblemente en el historial del navegador local. ¿Qué amenaza se describe en el ejemplo anterior?",
+        "options": [
+          { "text": "Autenticación/Autorización insegura", "value": "A" },
+          { "text": "Protecciones binarias insuficientes", "value": "B" },
+          { "text": "Validación de entrada/salida insuficiente", "value": "C" },
+          { "text": "Controles de privacidad inadecuados", "value": "D" },
+          { "text": "Comunicación insegura", "value": "E" },
+          { "text": "Uso inadecuado de credenciales", "value": "F" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "La visibilidad de parámetros de consulta en registros o historiales representa controles de privacidad inadecuados, ya que expone datos sensibles a partes no autorizadas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 12,
+        "text": "Un equipo de DevOps necesita identificar vulnerabilidades asociadas con la autenticación de usuarios y la inyección SQL en su aplicación. ¿Qué herramientas debería usar en el pipeline?",
+        "options": [
+          { "text": "Herramientas de pruebas dinámica de aplicaciones (DAST)", "value": "A" },
+          { "text": "Plataformas de administración de artefactos", "value": "B" },
+          { "text": "Consolas de gestión de la nube", "value": "C" },
+          { "text": "Herramientas de prueba estática de aplicaciones (SAST)", "value": "D" }
+        ],
+        "correctAnswer": ["A", "D"],
+        "explanation": "DAST y SAST son adecuadas: SAST analiza el código fuente para detectar vulnerabilidades como inyección SQL, mientras que DAST prueba la aplicación en ejecución para identificar problemas de autenticación.",
+        "appearedInExam": false
+      },
+      {
+        "id": 13,
+        "text": "¿Qué herramienta ayuda a proteger las aplicaciones web de tráfico malicioso?",
+        "options": [
+          { "text": "Las vulnerabilidades del código abierto", "value": "A" },
+          { "text": "Los cortafuegos de aplicaciones web (WAF)", "value": "B" },
+          { "text": "Los Scripts de validación", "value": "C" },
+          { "text": "Las API de terceros", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Un WAF (Web Application Firewall) protege aplicaciones web filtrando y bloqueando tráfico malicioso, como intentos de inyección o ataques XSS.",
+        "appearedInExam": false
+      },
+      {
+        "id": 14,
+        "text": "Se produce cuando las API procesan solicitudes de direcciones URL controladas por el usuario y obtienen recursos remotos del servidor para validar la solicitud del usuario.",
+        "options": [
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
+          { "text": "Gestión inadecuada del inventario", "value": "B" },
+          { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "C" },
+          { "text": "Autorización de nivel de propiedad de objetivo roto", "value": "D" },
+          { "text": "Autorización de nivel de función rota", "value": "E" },
+          { "text": "Configuración incorrecta de seguridad", "value": "F" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "La falsificación de solicitudes del lado del servidor (SSRF) ocurre cuando un atacante manipula URLs para que el servidor obtenga recursos no autorizados, explotando la confianza del servidor.",
+        "appearedInExam": false
+      },
+      {
+        "id": 15,
+        "text": "¿Qué derecho permite a los usuarios rechazar el uso de sus datos para fines específicos, como el entrenamiento de modelos?",
+        "options": [
+          { "text": "Derecho de acceso/portabilidad", "value": "A" },
+          { "text": "Derecho de corrección", "value": "B" },
+          { "text": "Derecho de eliminación", "value": "C" },
+          { "text": "Derecho de oposición", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "El derecho de oposición permite a los usuarios rechazar el uso de sus datos para fines específicos, como el entrenamiento de modelos, según regulaciones como GDPR.",
+        "appearedInExam": false
+      },
+      {
+        "id": 16,
+        "text": "Con el fin de lograr prevenir la amenaza del tipo Componentes vulnerables y obsoletos, decide usar herramientas configuradas con valores predeterminados para evitar introducir una configuración insegura. ¿Esto logrará impedir que se materialice la amenaza?",
+        "options": [
+          { "text": "Falso", "value": "A" },
+          { "text": "Verdadero", "value": "B" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Usar configuraciones predeterminadas no previene directamente la amenaza de componentes vulnerables y obsoletos, ya que esta se mitiga actualizando y verificando las versiones de los componentes.",
+        "appearedInExam": false
+      },
+      {
+        "id": 17,
+        "text": "¿Cuál es la etapa inicial del SDLC?",
+        "options": [
+          { "text": "Diseño", "value": "A" },
+          { "text": "Desarrollo", "value": "B" },
+          { "text": "Implementación", "value": "C" },
+          { "text": "Planificación", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "La etapa inicial del SDLC (Software Development Life Cycle) es la planificación, donde se definen los objetivos, requisitos y recursos del proyecto.",
+        "appearedInExam": false
+      },
+      {
+        "id": 18,
+        "text": "Imagine que una empresa de software ha decidido implementar SCA en su proceso de desarrollo para mejorar la calidad y seguridad de sus aplicaciones. El equipo de desarrollo desea asegurarse de que todas las posibles vulnerabilidades y errores de codificación se detecten antes del lanzamiento de la aplicación. ¿Cuál de las siguientes afirmaciones describe mejor el papel de SCA en este escenario?",
+        "options": [
+          { "text": "SCA detecta vulnerabilidades de seguridad sólo cuando la aplicación está en ejecución, lo que hace que no sea útil para este caso", "value": "A" },
+          { "text": "SCA solo se enfoca en encontrar vulnerabilidades en aplicaciones móviles, no es útil para aplicaciones web", "value": "B" },
+          { "text": "SCA ayuda a encontrar vulnerabilidades de seguridad sin necesidad de ejecutar la aplicación, permitiendo detectar problemas en componentes de terceros a lo largo del ciclo de desarrollo", "value": "C" },
+          { "text": "SCA solo se utiliza para evaluar el rendimiento de la aplicación, no tiene impacto en la calidad o seguridad del código", "value": "D" },
+          { "text": "SCA reemplaza todas las pruebas de seguridad y calidad necesarias, eliminando la necesidad de realizar revisiones murales o pruebas dinámicas", "value": "E" },
+          { "text": "SCA analiza el código en ejecución, por lo que no es necesario realizar pruebas estáticas adicionales", "value": "F" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "SCA (Software Composition Analysis) identifica vulnerabilidades en componentes de terceros sin necesidad de ejecutar la aplicación, ayudando a garantizar la seguridad durante el desarrollo.",
+        "appearedInExam": false
+      },
+      {
+        "id": 19,
+        "text": "Una organización desarrolla un modelo de IA utilizando anonimizados en lugar de datos reales para proteger la privacidad de los usuarios. ¿Qué técnica está utilizando el equipo para cumplir con las regulaciones de privacidad?",
+        "options": [
+          { "text": "Derecho de corrección", "value": "A" },
+          { "text": "Uso de datos sintéticos", "value": "B" },
+          { "text": "Entrenamiento adversarial", "value": "C" },
+          { "text": "Plataforma de gestión de consentimiento", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "El uso de datos sintéticos o anonimizados protege la privacidad al reemplazar datos reales con datos generados que no identifican a usuarios, cumpliendo con regulaciones como GDPR.",
+        "appearedInExam": false
+      },
+      {
+        "id": 20,
+        "text": "Un equipo está utilizando una infraestructura de nube pública. ¿Qué estrategia debe seguir para gestionar la seguridad?",
+        "options": [
+          { "text": "Usar los servicios de seguridad predeterminados sin personalización", "value": "A" },
+          { "text": "Dejar la seguridad completamente a cargo del proveedor de la nube", "value": "B" },
+          { "text": "Implementar el modelo de responsabilidad compartida de seguridad", "value": "C" },
+          { "text": "Desactivar las políticas de seguridad predeterminadas", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "El modelo de responsabilidad compartida implica que el proveedor de la nube gestiona la seguridad de la infraestructura, mientras que el cliente configura y protege sus datos y aplicaciones.",
+        "appearedInExam": false
+      },
+      {
+        "id": 21,
+        "text": "Un equipo tiene problemas con la lentitud en la provisión de infraestructura debido a la intervención manual constante. ¿Qué solución puede adoptar?",
+        "options": [
+          { "text": "Continuar con la provisión manual, pero incrementando el personal", "value": "A" },
+          { "text": "Implementar infraestructura como código (IaC)", "value": "B" },
+          { "text": "Evitar realizar pruebas en la infraestructura", "value": "C" },
+          { "text": "Reemplazar todos los sistemas automáticos por procesos manuales", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "La infraestructura como código (IaC) automatiza la provisión de infraestructura, reduciendo la intervención manual y mejorando la eficiencia y consistencia.",
+        "appearedInExam": false
+      },
+      {
+        "id": 22,
+        "text": "¿Qué técnica debe emplearse para proteger los datos durante el tiempo que se almacenan, según OWASP?",
+        "options": [
+          { "text": "Pruebas de caja blanca", "value": "A" },
+          { "text": "Sistemas de monitoreo en tiempo real", "value": "B" },
+          { "text": "Pruebas adversariales", "value": "C" },
+          { "text": "Técnicas de cifrado robusto", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "OWASP recomienda el uso de técnicas de cifrado robusto para proteger los datos en reposo, asegurando que permanezcan seguros incluso si se accede a ellos sin autorización.",
+        "appearedInExam": false
+      },
+      {
+        "id": 23,
+        "text": "¿Qué herramienta o proceso ayuda a garantizar que los datos recolectados son esenciales para el propósito del modelo?",
+        "options": [
+          { "text": "Dashboards en tiempo real", "value": "A" },
+          { "text": "Pruebas de caja negra", "value": "B" },
+          { "text": "Auditorías periódicas", "value": "C" },
+          { "text": "Sistemas de cifrado robustos", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Las auditorías periódicas verifican que los datos recolectados sean necesarios y relevantes para el propósito del modelo, cumpliendo con principios como la minimización de datos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 24,
+        "text": "¿Qué desafío adicional enfrenta la seguridad de las aplicaciones en la nube?",
+        "options": [
+          { "text": "Los datos confidenciales son más vulnerables", "value": "A" },
+          { "text": "Las aplicaciones no transmiten datos sensibles", "value": "B" },
+          { "text": "La implementación de hardware especializado", "value": "C" },
+          { "text": "Las aplicaciones basadas en la nube no necesitan seguridad", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "En la nube, los datos confidenciales son más vulnerables debido a la exposición a entornos compartidos y la necesidad de configuraciones de seguridad robustas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 25,
+        "text": "Considerando el proceso de desarrollo de software, nos encontramos realizando la actividad del modelado de amenazas, en específico estamos modificando los requerimientos para establecerlos. Dado este contexto, ¿qué deberíamos hacer para prevenir identificar y prevenir posibles amenazas dentro de un requerimiento?",
+        "options": [
+          { "text": "Usar herramientas automatizadas para análisis de código estático", "value": "A" },
+          { "text": "Documentar y seguir las políticas de seguridad de la organización durante la ejecución del programa", "value": "B" },
+          { "text": "Capacitar a los usuarios finales sobre el uso del programa para el caso de uso a modelar", "value": "C" },
+          { "text": "Usar herramientas manuales para pruebas de código dinámico", "value": "D" },
+          { "text": "Realizar pruebas de penetración en el software después de su implementación", "value": "E" },
+          { "text": "Identificar límites de confianza (valores permitidos, rangos de valores, límites de intentos), puntos de entrada y salida de información en el caso de uso", "value": "F" }
+        ],
+        "correctAnswer": ["F"],
+        "explanation": "En el modelado de amenazas, identificar límites de confianza, puntos de entrada y salida de información ayuda a definir requisitos que previenen amenazas desde la fase de diseño.",
+        "appearedInExam": false
+      },
+      {
+        "id": 26,
+        "text": "Una empresa implementa un modelo de IA que no ha sido entrenado con datos precisos. ¿Qué riesgo principal enfrenta la empresa?",
+        "options": [
+          { "text": "El modelo será 100% confiable desde el inicio", "value": "A" },
+          { "text": "El modelo tomará decisiones basadas en patrones defectuosos, lo que podría generar errores", "value": "B" },
+          { "text": "El modelo será más seguro y eficiente", "value": "C" },
+          { "text": "El modelo se ajustará automáticamente a los datos erróneos sin afectar los resultados", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Un modelo de IA entrenado con datos imprecisos generará decisiones basadas en patrones defectuosos, lo que puede llevar a errores y resultados no confiables.",
+        "appearedInExam": false
+      },
+      {
+        "id": 27,
+        "text": "Un atacante inyecta malware en una aplicación móvil durante el desarrollo. Luego, el atacante firma la aplicación con un certificado válido y lo distribuye a la tienda de aplicaciones, evitando los controles de seguridad de la tienda. Los usuarios adquieren la aplicación, que roba sus credenciales y otros datos confidenciales. ¿Qué amenaza se describe en el ejemplo anterior?",
+        "options": [
+          { "text": "Validación de entrada/salida insuficiente", "value": "A" },
+          { "text": "Uso inadecuado de credenciales", "value": "B" },
+          { "text": "Controles de privacidad inadecuados", "value": "C" },
+          { "text": "Protecciones binarias insuficientes", "value": "D" },
+          { "text": "Comunicación insegura", "value": "E" },
+          { "text": "Seguridad inadecuada de la cadena de suministro", "value": "F" }
+        ],
+        "correctAnswer": ["F"],
+        "explanation": "La inyección de malware durante el desarrollo y su distribución a través de una tienda de aplicaciones representa una amenaza de seguridad inadecuada en la cadena de suministro.",
+        "appearedInExam": false
+      },
+      {
+        "id": 28,
+        "text": "¿Cuál es un enfoque para asegurar entradas de usuarios antes de procesarlas?",
+        "options": [
+          { "text": "Validación del lado del cliente", "value": "A" },
+          { "text": "Validación del lado del servidor", "value": "B" },
+          { "text": "Smart fuzzing", "value": "C" },
+          { "text": "Administración de sesiones", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "La validación del lado del servidor es más segura, ya que el cliente puede ser manipulado, mientras que el servidor asegura que las entradas cumplan con los criterios establecidos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 29,
+        "text": "¿Cómo se puede reducir la superficie de ataque de una API?",
+        "options": [
+          { "text": "Limitar el número de solicitudes a la API", "value": "A" },
+          { "text": "Exponer todas las funciones de la API", "value": "B" },
+          { "text": "Permitiendo todos los puntos de acceso sin restricciones", "value": "C" },
+          { "text": "Hacer uso de una sola clave de API para todo el sistema", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Limitar el número de solicitudes a la API (rate limiting) reduce la superficie de ataque al prevenir abusos como ataques DDoS y accesos no autorizados.",
+        "appearedInExam": false
+      },
+      {
+        "id": 30,
+        "text": "Con el fin de lograr prevenir cierto tipo de vulnerabilidad decide usar componentes de terceros descargados de fuentes oficiales identificando las versiones de los componentes y de sus dependencias, manteniéndolas actualizadas. ¿Esto logrará impedir que se materialice qué tipo de amenaza?",
+        "options": [
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
+          { "text": "Fallos de integridad de software y datos", "value": "B" },
+          { "text": "Componentes vulnerables y obsoletos", "value": "C" },
+          { "text": "Error de identificación y autenticación", "value": "D" },
+          { "text": "Errores de registro y supervisión de seguridad", "value": "E" },
+          { "text": "Configuración incorrecta de seguridad", "value": "F" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Mantener componentes de terceros actualizados desde fuentes oficiales previene la amenaza de componentes vulnerables y obsoletos, reduciendo riesgos de seguridad conocidos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 31,
+        "text": "¿Qué se busca prevenir con la implementación de técnicas de análisis anti dinámico en una aplicación?",
+        "options": [
+          { "text": "La corrupción de los datos almacenados en el dispositivo", "value": "A" },
+          { "text": "La modificación de la interfaz de usuario", "value": "B" },
+          { "text": "El análisis y la manipulación del código durante el tiempo de ejecución", "value": "C" },
+          { "text": "El acceso a la memoria de la aplicación", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Las técnicas de análisis anti dinámico buscan prevenir el análisis y manipulación del código en tiempo de ejecución, dificultando que atacantes realicen ingeniería inversa o exploten el software.",
+        "appearedInExam": false
+      },
+      {
+        "id": 32,
+        "text": "Un atacante realiza múltiples intentos de acceso a la API utilizando contraseñas comunes. ¿Qué vulnerabilidad está aprovechando?",
+        "options": [
+          { "text": "Autenticación", "value": "A" },
+          { "text": "Acceso no autorizado a flujos sensibles", "value": "B" },
+          { "text": "Consumo de recursos sin restricción", "value": "C" },
+          { "text": "Autorización de objeto rota", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "El uso de contraseñas comunes explotan vulnerabilidades en la autenticación, como la falta de políticas de contraseñas fuertes o límites en intentos de acceso.",
+        "appearedInExam": false
+      },
+      {
+        "id": 33,
+        "text": "Un desarrollador está a punto de realizar un cambio en un contenedor, ¿qué debe verificar primero?",
+        "options": [
+          { "text": "Si la imagen contiene vulnerabilidades conocidas", "value": "A" },
+          { "text": "Si la imagen base es confiable y actualizada", "value": "B" },
+          { "text": "Si el contenedor tiene configuraciones personalizadas", "value": "C" },
+          { "text": "Si las credenciales de API están incluidas en el código", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Verificar que la imagen base sea confiable y esté actualizada es crucial para evitar vulnerabilidades conocidas y garantizar la seguridad del contenedor.",
+        "appearedInExam": false
+      },
+      {
+        "id": 34,
+        "text": "¿Cómo se debe priorizar la implementación de controles de seguridad?",
+        "options": [
+          { "text": "Por la complejidad técnica", "value": "A" },
+          { "text": "Por el impacto en la confianza del cliente", "value": "B" },
+          { "text": "Por el nivel de riesgo de cada amenaza", "value": "C" },
+          { "text": "Según el coste de implementación", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Los controles de seguridad deben priorizarse según el nivel de riesgo de cada amenaza, enfocándose en mitigar primero las más críticas para el sistema.",
+        "appearedInExam": false
+      },
+      {
+        "id": 35,
+        "text": "Durante el proceso de desarrollo de software, el equipo está utilizando herramientas para gestionar las bibliotecas y componentes de terceros integrados en la aplicación. La principal preocupación es garantizar que no existan vulnerabilidades de seguridad ni problemas de licencias asociados con estas dependencias externas. ¿Cuál de las siguientes pruebas es la más adecuada para este propósito?",
+        "options": [
+          { "text": "Software Composition Analysis (SCA)", "value": "A" },
+          { "text": "Pruebas de aceptación del usuario", "value": "B" },
+          { "text": "Pruebas de regresión", "value": "C" },
+          { "text": "Pruebas de caja negra", "value": "D" },
+          { "text": "Pruebas de caja blanca", "value": "E" },
+          { "text": "Pruebas de integración", "value": "F" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "SCA se enfoca en analizar bibliotecas y dependencias de terceros para identificar vulnerabilidades de seguridad y problemas de licencias, siendo la herramienta más adecuada.",
+        "appearedInExam": false
+      },
+      {
+        "id": 36,
+        "text": "Los desarrolladores dejan sus API y recursos vulnerables a ataques si los atacantes pueden manipular a proveedores exteriores. ¿A qué categoría de amenaza hace referencia el enunciado anterior?",
+        "options": [
+          { "text": "Configuración incorrecta de seguridad", "value": "A" },
+          { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "B" },
+          { "text": "Consumo inseguro de API", "value": "C" },
+          { "text": "Autorización de nivel de función rota", "value": "D" },
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "E" },
+          { "text": "Autorización de nivel de propiedad de objeto roto", "value": "F" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "El consumo inseguro de API ocurre cuando los desarrolladores no validan adecuadamente los datos de proveedores externos, dejando las APIs vulnerables a manipulaciones.",
+        "appearedInExam": false
+      },
+      {
+        "id": 37,
+        "text": "¿Por qué es esencial que las aplicaciones se ejecuten en una versión actualizada de la plataforma?",
+        "options": [
+          { "text": "Para tener las protecciones de seguridad más recientes y evitar vulnerabilidades conocidas", "value": "A" },
+          { "text": "Para aprovechar las nuevas características de diseño", "value": "B" },
+          { "text": "Para mejorar la experiencia del usuario", "value": "C" },
+          { "text": "Para reducir el consumo de batería de la aplicación", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Ejecutar aplicaciones en plataformas actualizadas asegura que se apliquen los últimos parches de seguridad, protegiendo contra vulnerabilidades conocidas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 38,
+        "text": "Al hacer un análisis de las causas de una brecha de seguridad, podemos atribuir esta causa a la implementación o a la arquitectura de la aplicación. En ese sentido, ¿cómo se denomina a esta causa de provenir de la implementación diseño/arquitectura?",
+        "options": [
+          { "text": "Amenaza", "value": "A" },
+          { "text": "Ataque", "value": "B" },
+          { "text": "Vulnerabilidad", "value": "C" },
+          { "text": "Exploit", "value": "D" },
+          { "text": "Defecto", "value": "E" },
+          { "text": "Error", "value": "F" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Una vulnerabilidad es una debilidad en la implementación o arquitectura que puede ser explotada, causando una brecha de seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 39,
+        "text": "Los desarrolladores a menudo confían en los datos recibidos, especialmente cuando trabajan con proveedores de renombre e implementan políticas y estándares de seguridad menos estrictos. ¿A qué categoría de amenaza hace referencia el enunciado anterior?",
+        "options": [
+          { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "A" },
+          { "text": "Consumo inseguro de API", "value": "B" },
+          { "text": "Autorización de nivel de función rota", "value": "C" },
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "D" },
+          { "text": "Autorización de nivel de propiedades de objeto roto", "value": "E" },
+          { "text": "Configuración incorrecta de seguridad", "value": "F" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Confiar ciegamente en datos de proveedores sin validación adecuada representa un consumo inseguro de API, aumentando el riesgo de ataques.",
+        "appearedInExam": false
+      },
+      {
+        "id": 40,
+        "text": "Una organización que opera en la nube detecta un incremento de ataques dirigidos hacia su consola de gestión. ¿Qué medida debería implementar para proteger este recurso crítico?",
+        "options": [
+          { "text": "Utilizar claves SSH incrustadas para asegurar la consola", "value": "A" },
+          { "text": "Realizar pruebas de aplicaciones estadísticas (SAST)", "value": "B" },
+          { "text": "Automatizar los scripts de aprovisionamiento", "value": "C" },
+          { "text": "Controlar estrictamente el acceso con privilegios a la consola de gestión", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "Controlar estrictamente el acceso con privilegios a la consola de gestión limita quién puede acceder, reduciendo el riesgo de ataques dirigidos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 41,
+        "text": "¿Por qué es importante aplicar actualizaciones a los componentes de software de terceros en una aplicación?",
+        "options": [
+          { "text": "Para mejorar la compatibilidad con otros dispositivos", "value": "A" },
+          { "text": "Para evitar el uso de componentes con vulnerabilidades conocidas", "value": "B" },
+          { "text": "Para reducir el tiempo de ejecución de la aplicación", "value": "C" },
+          { "text": "Para facilitar la depuración de los componentes del sistema", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Actualizar componentes de terceros evita vulnerabilidades conocidas, ya que las nuevas versiones suelen incluir parches de seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 42,
+        "text": "¿Qué tipo de vulnerabilidades se explotan en un ataque a una API?",
+        "options": [
+          { "text": "Vulnerabilidades solo en los servidores web", "value": "A" },
+          { "text": "Ataques de fuerza bruta únicamente", "value": "B" },
+          { "text": "Aprovechamientos de vulnerabilidades, como inyecciones de SQL y desconfiguración de la seguridad", "value": "C" },
+          { "text": "Vulnerabilidades conocidas como 'fallos de seguridad'", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Los ataques a APIs pueden explotar vulnerabilidades como inyecciones SQL y configuraciones de seguridad incorrectas, entre otras, para comprometer el sistema.",
+        "appearedInExam": false
+      },
+      {
+        "id": 43,
+        "text": "¿Qué requisito de seguridad protege contra la divulgación no autorizada de información sensible?",
+        "options": [
+          { "text": "Integridad", "value": "A" },
+          { "text": "Confidencialidad", "value": "B" },
+          { "text": "Transparencia", "value": "C" },
+          { "text": "Disponibilidad", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "La confidencialidad protege contra la divulgación no autorizada de información sensible, asegurando que solo las partes autorizadas puedan acceder a ella.",
+        "appearedInExam": false
+      },
+      {
+        "id": 44,
+        "text": "¿Cómo se llama el proceso que se enfoca en la seguridad después del proceso de desarrollo?",
+        "options": [
+          { "text": "Concientización", "value": "A" },
+          { "text": "DEVOPS", "value": "B" },
+          { "text": "SCRUM", "value": "C" },
+          { "text": "Automatización", "value": "D" },
+          { "text": "Desarrollo ágil", "value": "E" },
+          { "text": "Desplazar la seguridad a la derecha", "value": "F" }
+        ],
+        "correctAnswer": ["F"],
+        "explanation": "Desplazar la seguridad a la derecha (Shift Right) implica enfocarse en la seguridad post-desarrollo, como en producción, mediante monitoreo y respuesta a incidentes.",
+        "appearedInExam": false
+      },
+      {
+        "id": 45,
+        "text": "Una empresa necesita rastrear métricas clave como precisión y tasa de error en tiempo real. ¿Qué herramientas o práctica debería implementar?",
+        "options": [
+          { "text": "Desarrollar un dashboard de supervisión", "value": "A" },
+          { "text": "Entrenar el modelo con más datos", "value": "B" },
+          { "text": "Aplicar pruebas de caja negra", "value": "C" },
+          { "text": "Realizar pruebas adversariales periódicas", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Un dashboard de supervisión permite rastrear métricas clave como precisión y tasa de error en tiempo real, proporcionando visibilidad inmediata del rendimiento.",
+        "appearedInExam": false
+      },
+      {
+        "id": 46,
+        "text": "¿Qué aspecto permite que las aplicaciones web sean accesibles?",
+        "options": [
+          { "text": "Son exclusivas para usuarios con conocimientos avanzados", "value": "A" },
+          { "text": "Su diseño incluye acceso remoto", "value": "B" },
+          { "text": "Utilizan dispositivos de entrada avanzados", "value": "C" },
+          { "text": "Requieren instalación local", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "El diseño de aplicaciones web con acceso remoto permite que sean accesibles desde cualquier lugar a través de un navegador, sin necesidad de instalación local.",
+        "appearedInExam": false
+      },
+      {
+        "id": 47,
+        "text": "¿Cuál es el proceso de evaluar los controles de seguridad de la información e implementar los procesos y herramientas adecuados en los sistemas de TI para proteger los datos utilizados y almacenados?",
+        "options": [
+          { "text": "Análisis post mortem", "value": "A" },
+          { "text": "Diseño de calidad", "value": "B" },
+          { "text": "Modelado de amenazas", "value": "C" },
+          { "text": "Prioridad de las amenazas", "value": "D" },
+          { "text": "Control de Seguridad", "value": "E" },
+          { "text": "Arquitectura de seguridad", "value": "F" }
+        ],
+        "correctAnswer": ["F"],
+        "explanation": "La arquitectura de seguridad implica evaluar y diseñar controles para proteger datos, implementando herramientas y procesos adecuados en los sistemas de TI.",
+        "appearedInExam": false
+      },
+      {
+        "id": 48,
+        "text": "¿Cuál de los siguientes es un ejemplo de una mala práctica en gestión de claves criptográficas?",
+        "options": [
+          { "text": "Destruir las claves de forma correcta", "value": "A" },
+          { "text": "Utilizar claves largas y seguras", "value": "B" },
+          { "text": "Almacenar la clave criptográfica junto con los datos en una cinta de respaldo", "value": "C" },
+          { "text": "Realizar rotaciones frecuentes de claves", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Almacenar claves criptográficas junto con los datos en una cinta de respaldo es una mala práctica, ya que compromete la seguridad de los datos si la clave es accedida.",
+        "appearedInExam": false
+      },
+      {
+        "id": 49,
+        "text": "En un equipo DevOps, se está implementando un modelo de trabajo ágil. ¿Cómo se puede asegurar que el software esté siempre listo para ser desplegado?",
+        "options": [
+          { "text": "Usar sólo pruebas manuales de integración", "value": "A" },
+          { "text": "Implementar Continuous Integration (CI)", "value": "B" },
+          { "text": "Solo implementar código cuando todo esté terminado", "value": "C" },
+          { "text": "Reducir las pruebas automatizadas", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "La integración continua (CI) asegura que el software esté listo para desplegarse mediante la automatización de pruebas y compilaciones frecuentes.",
+        "appearedInExam": false
+      },
+      {
+        "id": 50,
+        "text": "Un equipo recibe alertas de seguridad sobre un contenedor. ¿Qué debería hacer primero para mitigar el riesgo?",
+        "options": [
+          { "text": "Deshabilitar la red para prevenir accesos no autorizados", "value": "A" },
+          { "text": "Actualizar todos los contenedores sin pruebas", "value": "B" },
+          { "text": "Rastrear y verificar las vulnerabilidades identificadas", "value": "C" },
+          { "text": "Ignorar las alertas si el contenedor parece funcionar bien", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Rastrear y verificar las vulnerabilidades identificadas permite al equipo entender el riesgo y tomar medidas específicas para mitigarlo sin interrumpir innecesariamente el sistema.",
+        "appearedInExam": false
+      },
+      {
+        "id": 51,
+        "text": "¿Qué tipo de vulnerabilidad permite que el atacante pueda acceder, modificar, agregar y eliminar valores de propiedad a los objetos?",
+        "options": [
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
+          { "text": "Consumo de recursos sin restricciones", "value": "B" },
+          { "text": "Acceso sin restricciones a flujos comerciales sensibles", "value": "C" },
+          { "text": "Configuración incorrecta de seguridad", "value": "D" },
+          { "text": "Autorización de nivel de propiedad de objeto roto", "value": "E" },
+          { "text": "Gestión inadecuada del inventario", "value": "F" }
+        ],
+        "correctAnswer": ["E"],
+        "explanation": "La autorización de nivel de propiedad de objeto roto permite a un atacante manipular objetos sin las restricciones adecuadas, accediendo o modificando datos no autorizados.",
+        "appearedInExam": false
+      },
+      {
+        "id": 52,
+        "text": "¿Qué tipo de análisis busca la vulnerabilidad en código fuente?",
+        "options": [
+          { "text": "Revisión de pares", "value": "A" },
+          { "text": "Escaneo dinámico", "value": "B" },
+          { "text": "Escaneo estático", "value": "C" },
+          { "text": "Análisis de diccionario", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "El escaneo estático (SAST) analiza el código fuente sin ejecutarlo, identificando vulnerabilidades como inyecciones o errores de codificación.",
+        "appearedInExam": false
+      },
+      {
+        "id": 53,
+        "text": "¿Cómo se puede mitigar el consumo no restringido de recursos?",
+        "options": [
+          { "text": "Implementación límites y cuotas de uso", "value": "A" },
+          { "text": "Permitiendo acceso ilimitado", "value": "B" },
+          { "text": "Eliminado todas las peticiones de los usuarios", "value": "C" },
+          { "text": "No limitando la velocidad de acceso", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Implementar límites y cuotas de uso (rate limiting) mitiga el consumo no restringido de recursos, previniendo abusos como ataques DDoS.",
+        "appearedInExam": false
+      },
+      {
+        "id": 54,
+        "text": "Una aplicación está configurada de tal manera que un usuario de forma convencional tiene los permisos mínimos para realizar sus actividades diarias, de ser necesario, el usuario puede asumir permisos más elevados durante un periodo. ¿Qué características hacen referencia al enunciado anterior?",
+        "options": [
+          { "text": "JIT", "value": "A" },
+          { "text": "Atomicidad", "value": "B" },
+          { "text": "JEA", "value": "C" },
+          { "text": "Integridad", "value": "D" },
+          { "text": "Disponibilidad", "value": "E" },
+          { "text": "No repudio", "value": "F" }
+        ],
+        "correctAnswer": ["A", "C"],
+        "explanation": "JIT (Just-In-Time) y JEA (Just Enough Administration) permiten a los usuarios obtener permisos elevados temporalmente, siguiendo el principio de privilegio mínimo.",
+        "appearedInExam": false
+      },
+      {
+        "id": 55,
+        "text": "Un atacante obtiene acceso físico al dispositivo de un usuario y extrae las credenciales almacenadas de la aplicación. El atacante utiliza las mismas para obtener acceso no autorizado a la cuenta del usuario. ¿Qué amenaza se describe en el ejemplo anterior?",
+        "options": [
+          { "text": "Validación de entrada/salida insuficiente", "value": "A" },
+          { "text": "Uso inadecuado de credenciales", "value": "B" },
+          { "text": "Comunicación insegura", "value": "C" },
+          { "text": "Controles de privacidad inadecuados", "value": "D" },
+          { "text": "Protecciones binarias insuficientes", "value": "E" },
+          { "text": "Seguridad inadecuada de la cadena de suministro", "value": "F" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "El uso inadecuado de credenciales ocurre cuando estas se almacenan de manera insegura, permitiendo a un atacante con acceso físico extraerlas y usarlas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 56,
+        "text": "Una de las técnicas que utilizan lenguajes de programación más nuevos en comparación con lenguajes más viejos es la gestión automática de memoria. Permitiendo de esta manera prevenir ataques que sobrecarguen la memoria con objetos que ya son inalcanzables en el programa. ¿Lo anterior podría ayudar a prevenir ataques de denegación de servicio?",
+        "options": [
+          { "text": "Verdadero", "value": "A" },
+          { "text": "Falso", "value": "B" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "La gestión automática de memoria, como el recolector de basura, puede prevenir ataques de denegación de servicio al evitar desbordamientos de memoria causados por objetos inalcanzables.",
+        "appearedInExam": false
+      },
+      {
+        "id": 57,
+        "text": "Los abogados de una empresa están preocupados por los aspectos legales relacionados con el uso de software, ya que existen distintos tipos de licencias, como GNU/GPL, Apache, entre otras. Les inquieta que, debido a la naturaleza del desarrollo, algunos de los componentes utilizados puedan estar regulados y, por ello, le solicitan identificar todas las librerías y dependencias empleadas para corroborar que no se esté haciendo un uso indebido de dichos componentes. ¿Qué tipo de prueba le puede ayudar en esta tarea?",
+        "options": [
+          { "text": "SCA", "value": "A" },
+          { "text": "DAST", "value": "B" },
+          { "text": "Integración", "value": "C" },
+          { "text": "Unitarias", "value": "D" },
+          { "text": "Carga", "value": "E" },
+          { "text": "SAST", "value": "F" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "SCA (Software Composition Analysis) identifica bibliotecas y dependencias, verificando licencias y vulnerabilidades para asegurar el cumplimiento legal y de seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 58,
+        "text": "Una aplicación de reconocimiento facial recopila datos de los rostros de un usuario para autenticar accesos. Posteriormente, esta información se usa para crear perfiles demográficos sin consentimiento previo. ¿Qué principio se está ignorando?",
+        "options": [
+          { "text": "La seguridad en el almacenamiento de datos personales", "value": "A" },
+          { "text": "La especificación de finalidad y consentimiento informado", "value": "B" },
+          { "text": "La auditoría de los datos recopilados", "value": "C" },
+          { "text": "El uso de aprendizaje federado para proteger la privacidad", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "El principio de especificación de finalidad y consentimiento informado requiere que los datos se usen solo para los fines consentidos por el usuario, lo cual se ignora al crear perfiles sin permiso.",
+        "appearedInExam": false
+      },
+      {
+        "id": 59,
+        "text": "Un equipo de desarrollo de la IA actualiza las políticas de privacidad de su aplicación y comienza a usar los datos de los usuarios para un propósito. ¿Qué deben hacer para cumplir con las regulaciones de privacidad?",
+        "options": [
+          { "text": "Anonimizar los datos sin necesidad de notificación", "value": "A" },
+          { "text": "Continuar usando los datos bajo el consentimiento previo", "value": "B" },
+          { "text": "Modificar el consentimiento de manera automática", "value": "C" },
+          { "text": "Notificar a los usuarios y solicitarles que confirmen nuevamente su conocimiento", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "Cambios en el uso de datos requieren notificar a los usuarios y obtener un nuevo consentimiento, conforme a regulaciones como GDPR, para garantizar transparencia.",
+        "appearedInExam": false
+      },
+      {
+        "id": 60,
+        "text": "Deshabilitar características, servicios o módulos innecesarios para la funcionalidad de la API. ¿Los anteriores son ejemplos de soluciones ante qué tipo de amenaza?",
+        "options": [
+          { "text": "Gestión inadecuada del inventario", "value": "A" },
+          { "text": "Autorización de nivel de función rota", "value": "B" },
+          { "text": "Configuración incorrecta de seguridad", "value": "C" },
+          { "text": "Autorización de nivel de propiedad de objeto roto", "value": "D" },
+          { "text": "Acceso sin restricciones a flujos comerciales", "value": "E" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Deshabilitar características innecesarias mitiga la configuración incorrecta de seguridad al reducir la superficie de ataque y limitar funciones expuestas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 61,
+        "text": "¿Cuál de los siguientes es un manual completo que cubre los procesos, técnicas y herramientas utilizadas durante el análisis de seguridad de aplicaciones móviles, así como conjunto exhaustivo de casos de prueba para verificar los requisitos enumerados en el estándar de verificación de seguridad de aplicaciones móviles de OWASP (MASVS)?",
+        "options": [
+          { "text": "OWASP Mobile Top 10", "value": "A" },
+          { "text": "PCI DSS", "value": "B" },
+          { "text": "MASVS", "value": "C" },
+          { "text": "OWASP Top 10", "value": "D" },
+          { "text": "MASTG", "value": "E" },
+          { "text": "MITRE SHIELD", "value": "F" }
+        ],
+        "correctAnswer": ["E"],
+        "explanation": "MASTG (Mobile Application Security Testing Guide) es el manual completo de OWASP que cubre análisis de seguridad y casos de prueba para cumplir con MASVS.",
+        "appearedInExam": false
+      },
+      {
+        "id": 62,
+        "text": "¿Cuál es la tarea que se lleva a cabo en la fase de diseño del SDLC para abordar la seguridad?",
+        "options": [
+          { "text": "Aplicar pruebas dinámicas", "value": "A" },
+          { "text": "Desarrollar pruebas de verificación", "value": "B" },
+          { "text": "Implementar estándares de codificación segura", "value": "C" },
+          { "text": "Crear el modelo de amenazas", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "En la fase de diseño del SDLC, crear el modelo de amenazas identifica riesgos y define requisitos de seguridad para mitigarlos desde el inicio.",
+        "appearedInExam": false
+      },
+      {
+        "id": 63,
+        "text": "¿Cuál de las siguientes afirmaciones sobre SAST y SCA es correcta?",
+        "options": [
+          { "text": "SAST permite detectar vulnerabilidades de seguridad en el código fuente sin necesidad de ejecutar la aplicación", "value": "A" },
+          { "text": "SCA es una técnica que evalúa el rendimiento y la seguridad de una aplicación al ejecutarla", "value": "B" },
+          { "text": "SCA se enfoca principalmente en la calidad del código y no abarca la seguridad en la aplicación", "value": "C" },
+          { "text": "SCA solo identifica problemas de seguridad y no aborda otros defectos en el código", "value": "D" },
+          { "text": "SAST y SCA son lo mismo, ambos se centran únicamente en la calidad del código", "value": "E" },
+          { "text": "SAST se utiliza exclusivamente para analizar el rendimiento de una aplicación, sin considerar su seguridad", "value": "F" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "SAST (Static Application Security Testing) analiza el código fuente sin ejecutarlo, detectando vulnerabilidades de seguridad, mientras que SCA se centra en componentes de terceros.",
+        "appearedInExam": false
+      },
+      {
+        "id": 64,
+        "text": "Considerando una aplicación con una validación de entrada pobre (Se omiten sustituir valores, eliminar caracteres especiales o no se literaliza la entrada), ¿qué tipo de amenazas podrían presentarse?",
+        "options": [
+          { "text": "Robo de sesión", "value": "A" },
+          { "text": "Inyección SQL", "value": "B" },
+          { "text": "Fuerza bruta", "value": "C" },
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "D" },
+          { "text": "Mensajes de error detallados", "value": "E" },
+          { "text": "XSS", "value": "F" }
+        ],
+        "correctAnswer": ["B", "F"],
+        "explanation": "Una validación de entrada pobre puede permitir inyecciones SQL y ataques XSS, ya que los datos no sanitizados pueden ser interpretados como código o consultas maliciosas.",
+        "appearedInExam": false
+      },
+      {
+        "id": 65,
+        "text": "¿Qué control garantiza que cualquier dato confidencial almacenado intencionalmente por la aplicación esté protegido adecuadamente, independientemente de la ubicación de destino?",
+        "options": [
+          { "text": "MASVS-RESILIENCE", "value": "A" },
+          { "text": "MASVS-CRYPTO", "value": "B" },
+          { "text": "MASVS-AUTH", "value": "C" },
+          { "text": "MASVS-NETWORK", "value": "D" },
+          { "text": "MASVS-DEVOPS", "value": "E" },
+          { "text": "MASVS-STORAGE", "value": "F" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "MASVS-CRYPTO asegura que los datos confidenciales almacenados estén protegidos mediante técnicas de cifrado robustas, independientemente de su ubicación.",
+        "appearedInExam": false
+      },
+      {
+        "id": 66,
+        "text": "Un automóvil autónomo comienza a tomar decisiones erróneas debido a pequeños cambios en las señales de tráfico que no son detectables para los humanos. Estas alteraciones hacen que el modelo de IA interprete incorrectamente las señales. ¿Qué tipo de ataque está afectando al modelo del vehículo autónomo?",
+        "options": [
+          { "text": "Inyección de código", "value": "A" },
+          { "text": "Envenenamiento de datos", "value": "B" },
+          { "text": "Filtración de información", "value": "C" },
+          { "text": "Ataque adversarial", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "Un ataque adversarial altera sutilmente las entradas (como señales de tráfico) para engañar al modelo de IA, causando decisiones erróneas sin ser detectado por humanos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 67,
+        "text": "Un equipo de DevOps detecta una vulnerabilidad en su aplicación mientras está en producción. ¿Qué herramienta debe utilizar para abordar el problema de forma rápida?",
+        "options": [
+          { "text": "Herramientas de pruebas dinámicas de seguridad de aplicaciones (DAST)", "value": "A" },
+          { "text": "Realizar pruebas solo en el entorno de desarrollo", "value": "B" },
+          { "text": "Dejar que el problema sea solucionado en una próxima actualización", "value": "C" },
+          { "text": "Ignorar las vulnerabilidades en producción", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "DAST (Dynamic Application Security Testing) analiza aplicaciones en producción, identificando vulnerabilidades rápidamente sin necesidad de acceder al código fuente.",
+        "appearedInExam": false
+      },
+      {
+        "id": 68,
+        "text": "Un usuario obtiene acceso a funcionalidades del sistema móvil sin tener permiso adecuado. ¿Qué vulnerabilidad está presente?",
+        "options": [
+          { "text": "Autenticación/autorización insegura", "value": "A" },
+          { "text": "Criptografía insuficiente", "value": "B" },
+          { "text": "Protección binaria insuficiente", "value": "C" },
+          { "text": "Almacenamiento inseguro de datos", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "La autenticación/autorización insegura permite a usuarios acceder a funcionalidades sin los permisos adecuados, debido a fallos en los controles de acceso.",
+        "appearedInExam": false
+      },
+      {
+        "id": 69,
+        "text": "Considerando la importancia del manejo de memoria, existe una condición que ocurre cuando los datos que se copian en el buffer son más grandes de lo que el buffer puede manejar. ¿Esto puede considerarse como qué tipo de amenaza?",
+        "options": [
+          { "text": "Falsificación de solicitudes del lado del servidor", "value": "A" },
+          { "text": "Inyección", "value": "B" },
+          { "text": "Buffer Overflow", "value": "C" },
+          { "text": "Keylogger", "value": "D" },
+          { "text": "Denegación de servicio", "value": "E" },
+          { "text": "XSS", "value": "F" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Un buffer overflow ocurre cuando se escriben más datos en un buffer de los que puede manejar, pudiendo causar fallos o permitir la ejecución de código malicioso.",
+        "appearedInExam": false
+      },
+      {
+        "id": 70,
+        "text": "¿Qué se debe hacer para proteger las APIs de posibles ataques DDoS?",
+        "options": [
+          { "text": "No permitir ningún tipo de autenticación", "value": "A" },
+          { "text": "Evitar el uso de encriptación TLS", "value": "B" },
+          { "text": "Configurar una API Gateway con limitación de velocidad", "value": "C" },
+          { "text": "Permitir solicitudes ilimitadas a la API", "value": "D" }
+        ],
+        "correctAnswer": ["C"],
+        "explanation": "Configurar una API Gateway con limitación de velocidad (rate limiting) protege contra ataques DDoS al restringir el número de solicitudes por usuario o tiempo.",
+        "appearedInExam": false
+      },
+      {
+        "id": 71,
+        "text": "Considerando una aplicación con una arquitectura cliente-servidor, la lógica del negocio debería manejarse principalmente en el lado del servidor, esto con el fin de lograr una de las siguientes opciones. ¿Cuál es el principio que estamos cumpliendo?",
+        "options": [
+          { "text": "Fallo seguro", "value": "A" },
+          { "text": "Diseño abierto", "value": "B" },
+          { "text": "Economía de mecanismos", "value": "C" },
+          { "text": "Menos privilegio", "value": "D" },
+          { "text": "Mínima exposición", "value": "E" },
+          { "text": "Aceptabilidad psicológica", "value": "F" }
+        ],
+        "correctAnswer": ["E"],
+        "explanation": "Manejar la lógica del negocio en el servidor cumple con el principio de mínima exposición, reduciendo la superficie de ataque al limitar lo que el cliente puede manipular.",
+        "appearedInExam": false
+      },
+      {
+        "id": 72,
+        "text": "Un equipo tiene un problema con la actualización de imágenes de contenedor. ¿Qué debería hacer para garantizar la seguridad?",
+        "options": [
+          { "text": "Utilizar imágenes sin ningún tipo de validación", "value": "A" },
+          { "text": "Asegurarse de que capas de runtime y sistema operativo estén actualizadas", "value": "B" },
+          { "text": "Mantener las imágenes antiguas para evitar cambios", "value": "C" },
+          { "text": "Descargar imágenes de fuentes no verificadas para acelerar el proceso", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Asegurarse de que las capas de runtime y el sistema operativo estén actualizadas garantiza que el contenedor no contenga vulnerabilidades conocidas, mejorando la seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 73,
+        "text": "¿Por qué es importante aplicar actualizaciones a los componentes de software de terceros en una aplicación?",
+        "options": [
+          { "text": "Para facilitar la depuración de los componentes del sistema", "value": "A" },
+          { "text": "Para reducir el tiempo de ejecución de la aplicación", "value": "B" },
+          { "text": "Para mejorar la compatibilidad con otros dispositivos", "value": "C" },
+          { "text": "Para evitar el uso de componentes con vulnerabilidades conocidas", "value": "D" }
+        ],
+        "correctAnswer": ["D"],
+        "explanation": "Actualizar componentes de terceros evita vulnerabilidades conocidas, ya que las nuevas versiones incluyen parches de seguridad para proteger la aplicación.",
+        "appearedInExam": false
+      },
+      {
+        "id": 74,
+        "text": "Demasiadas peticiones dirigidas a una API pueden ralentizar o detener el servicio para otros clientes. ¿A qué tipo de amenazas estamos hablando?",
+        "options": [
+          { "text": "Aprovechamientos de vulnerabilidades", "value": "A" },
+          { "text": "DoS", "value": "B" },
+          { "text": "Ataques basados en la autenticación", "value": "C" },
+          { "text": "DDoS", "value": "D" },
+          { "text": "Errores de autorización", "value": "E" }
+        ],
+        "correctAnswer": ["B", "D"],
+        "explanation": "Tanto DoS (Denial of Service) como DDoS (Distributed Denial of Service) implican inundar una API con solicitudes para ralentizar o detener el servicio, afectando a otros clientes.",
+        "appearedInExam": false
+      },
+      {
+        "id": 75,
+        "text": "¿Cuál es el objetivo principal de los ciberataques?",
+        "options": [
+          { "text": "Obtener información confidencial", "value": "A" },
+          { "text": "Obtener datos, dinero o destruir la reputación", "value": "B" },
+          { "text": "Robar hardware de la empresa", "value": "C" },
+          { "text": "Destruir la infraestructura", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Los ciberataques buscan principalmente obtener datos, dinero o dañar la reputación de la víctima, abarcando una amplia gama de objetivos maliciosos.",
+        "appearedInExam": false
+      },
+      {
+        "id": 76,
+        "text": "¿Qué técnica ayuda a transformar datos peligrosos en una forma inocua?",
+        "options": [
+          { "text": "Validación de entradas", "value": "A" },
+          { "text": "Sanitización de entradas", "value": "B" },
+          { "text": "Autenticación", "value": "C" },
+          { "text": "Autorización", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "La sanitización de entradas transforma datos potencialmente peligrosos en una forma segura, eliminando o neutralizando contenido malicioso antes de procesarlo.",
+        "appearedInExam": false
+      },
+      {
+        "id": 77,
+        "text": "¿Cuál es el propósito de la validación de la integridad de la plataforma en MASVS-RESILIENCIA?",
+        "options": [
+          { "text": "Asegurar que los datos de los usuarios sean almacenados correctamente", "value": "A" },
+          { "text": "Garantizar que la plataforma no ha sido manipulada para deshabilitar funciones de seguridad", "value": "B" },
+          { "text": "Mejorar la interfaz de usuario de la aplicación", "value": "C" },
+          { "text": "Permitir actualizaciones del sistema operativo", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "MASVS-RESILIENCE valida la integridad de la plataforma para asegurar que no ha sido manipulada, previniendo la desactivación de funciones de seguridad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 78,
+        "text": "¿Qué implica la transparencia en los modelos de IA según OWASP?",
+        "options": [
+          { "text": "La habilidad de explicar cómo y por qué toma decisiones", "value": "A" },
+          { "text": "La garantía de que el modelo es ético", "value": "B" },
+          { "text": "La capacitación de mejorar la precisión del modelo", "value": "C" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "La transparencia en modelos de IA, según OWASP, implica explicar cómo y por qué el modelo toma decisiones, promoviendo confianza y responsabilidad.",
+        "appearedInExam": false
+      },
+      {
+        "id": 79,
+        "text": "¿Qué tipo de interfaz podría incluirse en los sistemas de IA para permitir a los usuarios gestionar su consentimiento y eliminación de datos?",
+        "options": [
+          { "text": "Interfaz para solicitudes de eliminación de datos", "value": "A" },
+          { "text": "Interfaz para analizar el uso de datos", "value": "B" },
+          { "text": "Interfaz para reportar vulnerabilidades", "value": "C" },
+          { "text": "Interfaz para revisión de seguridad", "value": "D" }
+        ],
+        "correctAnswer": ["A"],
+        "explanation": "Una interfaz para solicitudes de eliminación de datos permite a los usuarios gestionar directamente su consentimiento y ejercer su derecho a eliminar datos personales, cumpliendo con regulaciones de privacidad como GDPR."
+      },
+      {
+        "id": 80,
+        "text": "Una organización descubre que varios de sus artefactos de compilación obsoletos están ocupando espacio en su repositorio de CI. ¿Qué medida debería tomar para gestionar eficientemente estos artefactos?",
+        "options": [
+          { "text": "Implementar pruebas DAST durante el ciclo de vida de los artefactos", "value": "A" },
+          { "text": "Especificar las condiciones para eliminar artefactos en función del tiempo o espacio disponible", "value": "B" },
+          { "text": "Automatizar los scripts de aprovisionamiento de infraestructura", "value": "C" },
+          { "text": "Migrar todos los artefactos a un repositorio público", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "Establecer políticas para eliminar artefactos obsoletos según tiempo o espacio disponible optimiza el almacenamiento en el repositorio de CI, reduciendo costos y mejorando la eficiencia."
+      },
+      {
+        "id": 81,
+        "text": "Un equipo de DevOps necesita identificar vulnerabilidades asociadas con la autenticación de usuarios y la inyección SQL en su aplicación. ¿Qué herramientas debería usar en el pipeline?",
+        "options": [
+          { "text": "Consolas de gestión de la nube", "value": "A" },
+          { "text": "Herramientas de prueba dinámica de aplicación (DAST)", "value": "B" },
+          { "text": "Plataformas de administración de artefactos", "value": "C" },
+          { "text": "Herramientas de prueba estáticas de aplicaciones (SAST)", "value": "D" }
+        ],
+        "correctAnswer": ["B", "D"],
+        "explanation": "SAST analiza el código fuente para detectar vulnerabilidades como inyección SQL, mientras que DAST prueba la aplicación en ejecución para identificar problemas como fallos de autenticación, siendo ambas complementarias en un pipeline de DevOps."
+      },
+      {
+        "id": 82,
+        "text": "¿Qué desafío adicional enfrenta la seguridad de las aplicaciones en la nube?",
+        "options": [
+          { "text": "Las aplicaciones no transmiten datos sensibles", "value": "A" },
+          { "text": "Los datos confidenciales son más vulnerables", "value": "B" },
+          { "text": "La implementación de hardware especializado", "value": "C" },
+          { "text": "Las aplicaciones basadas en la nube no necesitan seguridad", "value": "D" }
+        ],
+        "correctAnswer": ["B"],
+        "explanation": "En la nube, los datos confidenciales son más vulnerables debido a la naturaleza compartida de la infraestructura y la necesidad de configuraciones de seguridad robustas, aumentando el riesgo de exposición."
+      }
 ];
 const QuizApp = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = React.useState(0);
@@ -1258,4 +1228,5 @@ root.render(<QuizApp />);
   </script>
 </body>
 </html>
+
 
